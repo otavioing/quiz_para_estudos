@@ -1,273 +1,236 @@
 const perguntas = [
   {
-    pergunta: "Qual alternativa apresenta os 3 pilares da hipermodernidade?",
+    pergunta: "O que caracteriza o modelo SaaS (Software como Serviço)?",
     respostas: [
-      "Hiperconsumismo, hiperindividualismo e hipernarcisismo",
-      "Consumo, trabalho e educação",
-      "Modernidade, pós-modernidade e tecnologia",
-      "Internet, globalização e capitalismo"
+      "É exclusivo para armazenamento de dados em servidores locais.",
+      "Permite ao usuário gerenciar o sistema operacional e aplicações.",
+      "Oferece apenas infraestrutura física, sem software.",
+      "Fornece aplicações prontas para uso, acessíveis via internet.",
+      "Exige instalação local de todos os softwares."
+    ],
+    correta: 3
+  },
+  {
+    pergunta: "Qual das opções abaixo é uma característica da nuvem pública?",
+    respostas: [
+      "Não permite escalabilidade de recursos.",
+      "É dedicada exclusivamente a uma única organização.",
+      "Exige instalação de hardware local pelo cliente.",
+      "É gerenciada por provedores externos e atende múltiplos clientes.",
+      "Oferece apenas serviços de backup."
+    ],
+    correta: 3
+  },
+  {
+    pergunta: "No modelo IaaS, o cliente é responsável por gerenciar:",
+    respostas: [
+      "Somente a rede física.",
+      "Sistema operacional, aplicações e dados.",
+      "Apenas o banco de dados.",
+      "Apenas o uso da aplicação.",
+      "Somente o hardware físico."
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Qual provedor de nuvem é reconhecido por sua especialização em Big Data e Machine Learning?",
+    respostas: [
+      "Oracle Cloud",
+      "Google Cloud Platform (GCP)",
+      "Amazon Web Services (AWS)",
+      "IBM Cloud",
+      "Microsoft Azure"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O que diferencia a nuvem híbrida das demais?",
+    respostas: [
+      "É utilizada apenas por pequenas empresas.",
+      "Oferece apenas serviços de armazenamento.",
+      "Não permite integração entre diferentes ambientes.",
+      "Combina nuvem pública e privada, permitindo portabilidade de dados e aplicações.",
+      "É exclusiva para uso doméstico."
+    ],
+    correta: 3
+  },
+  {
+    pergunta: "Qual das alternativas abaixo NÃO é um benefício da abordagem multi-cloud?",
+    respostas: [
+      "Aumenta a dependência de um único provedor.",
+      "Permite otimização de custos.",
+      "Oferece flexibilidade na escolha de serviços.",
+      "Reduz riscos de indisponibilidade.",
+      "Aumenta a resiliência dos sistemas."
     ],
     correta: 0
   },
   {
-    pergunta: "A hipermodernidade representa:",
+    pergunta: "No modelo PaaS, o usuário gerencia:",
     respostas: [
-      "O fim da modernidade",
-      "Uma ruptura total com a tecnologia",
-      "A radicalização dos traços modernos",
-      "A volta aos costumes antigos"
+      "Todo o hardware e rede física.",
+      "Apenas o banco de dados.",
+      "Apenas aplicações e dados.",
+      "Sistema operacional e hardware.",
+      "Somente o uso da aplicação."
     ],
     correta: 2
   },
   {
-    pergunta: "Quem é o 'lautor' na cultura digital?",
+    pergunta: "Qual das opções abaixo é um critério importante para escolher um provedor de nuvem?",
     respostas: [
-      "Uma pessoa que apenas escreve conteúdos",
-      "Um usuário que atua simultaneamente como autor e leitor",
-      "Um programador de sites",
-      "Um editor de jornais"
+      "Quantidade de funcionários do provedor.",
+      "Disponibilidade regional e conformidade regulatória.",
+      "Localização do escritório central do provedor.",
+      "Apenas o preço do serviço.",
+      "Número de redes sociais do provedor."
     ],
     correta: 1
   },
   {
-    pergunta: "Qual é uma característica do texto verbal tradicional?",
+    pergunta: "Entre os três grandes provedores de nuvem, qual possui a maior cobertura regional?",
     respostas: [
-      "É multimodal",
-      "É reticular e flexível",
-      "É linear e hierarquizado",
-      "Possui links e vídeos"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "O hipertexto é caracterizado por ser:",
-    respostas: [
-      "Linear e rígido",
-      "Reticular, flexível e multimodal",
-      "Somente textual",
-      "Unidirecional"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "No hipertexto, a metáfora usada para o leitor é:",
-    respostas: [
-      "Caminhar",
-      "Pesquisar",
-      "Navegar",
-      "Digitar"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Os gêneros digitais são:",
-    respostas: [
-      "Textos totalmente novos criados pela internet",
-      "Gêneros antigos que desapareceram",
-      "Enunciados que se transformaram e ganharam novas funções no meio digital",
-      "Apenas mensagens informais"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "A formalidade dos gêneros digitais depende:",
-    respostas: [
-      "Da internet ser informal",
-      "Somente do aplicativo usado",
-      "Do contexto e do gênero analisado",
-      "Da idade do usuário"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Uma característica dos discursos eletrônicos é:",
-    respostas: [
-      "Uso exclusivo da norma culta",
-      "Ausência de imagens",
-      "Uso de abreviações, emoticons e internetês",
-      "Textos sempre longos"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Qual gênero digital é focado em conteúdo de áudio e vídeo?",
-    respostas: [
-      "Petição online",
-      "Fanfiction",
-      "Podcast e vlog",
-      "Currículo web"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "O que é uma fanfiction (fanfic)?",
-    respostas: [
-      "Um currículo online",
-      "Uma história criada por fãs baseada em obras existentes",
-      "Um vídeo humorístico",
-      "Uma mensagem instantânea"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "A cultura remix é baseada principalmente em:",
-    respostas: [
-      "Criar tudo do zero",
-      "Recortar, copiar, colar e reinterpretar conteúdos",
-      "Excluir conteúdos antigos",
-      "Somente compartilhar links"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que é remixagem?",
-    respostas: [
-      "Criar uma obra totalmente original",
-      "Usar partes de uma obra original para criar algo novo",
-      "Excluir informações da internet",
-      "Criar um banco de dados"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que é curadoria digital?",
-    respostas: [
-      "Excluir conteúdos da internet",
-      "Criar fake news",
-      "Selecionar e organizar informações para gerar sentido",
-      "Fazer upload de vídeos"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "O ato de usar hashtags para organizar conteúdos é chamado de:",
-    respostas: [
-      "Apreciar",
-      "Taguear",
-      "Remixar",
-      "Filtrar"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que é coesão textual?",
-    respostas: [
-      "A lógica do texto",
-      "A ligação física e linguística dos elementos do texto",
-      "A opinião do leitor",
-      "A quantidade de palavras"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "A coesão referencial anafórica ocorre quando:",
-    respostas: [
-      "Antecipamos uma informação",
-      "Retomamos algo já mencionado",
-      "Mudamos de assunto",
-      "Criamos um argumento"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "A coesão catafórica acontece quando:",
-    respostas: [
-      "Um termo já dito é retomado",
-      "Há repetição excessiva",
-      "Uma informação é antecipada antes de ser apresentada",
-      "O texto perde sentido"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Qual exemplo apresenta relação entre hiperônimo e hipônimo?",
-    respostas: [
-      "Flor e violeta",
-      "Bonito e feio",
-      "Livro e leitura",
-      "Sol e lua"
+      "Microsoft Azure",
+      "Amazon Web Services (AWS)",
+      "Oracle Cloud",
+      "IBM Cloud",
+      "Google Cloud Platform (GCP)"
     ],
     correta: 0
   },
   {
-    pergunta: "A coesão sequencial serve para:",
+    pergunta: "Qual das alternativas abaixo é uma vantagem da computação em nuvem?",
     respostas: [
-      "Separar frases sem conexão",
-      "Fazer o texto progredir logicamente",
-      "Criar imagens no texto",
-      "Eliminar conectivos"
+      "Acesso restrito a partir de um único local.",
+      "Pagamento fixo independente do uso.",
+      "Necessidade de compra antecipada de servidores físicos.",
+      "Atualizações manuais obrigatórias pelo usuário.",
+      "Elasticidade e escalabilidade automáticas de recursos."
     ],
-    correta: 1
+    correta: 4
   },
+
+  // QUESTÕES EXTRAS
+
   {
-    pergunta: "O que é coerência textual?",
+    pergunta: "Qual modelo de serviço oferece maior controle e flexibilidade ao cliente?",
     respostas: [
-      "A repetição de palavras",
-      "A unidade de sentido do texto",
-      "O tamanho do texto",
-      "O uso correto de pontuação"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Um texto pode ser coerente sem elementos explícitos de coesão?",
-    respostas: [
-      "Não, nunca",
-      "Somente em redações",
-      "Sim, como em poemas e listas",
-      "Apenas em textos científicos"
+      "SaaS",
+      "PaaS",
+      "IaaS",
+      "Multi-cloud"
     ],
     correta: 2
   },
   {
-    pergunta: "A coerência narrativa está relacionada com:",
+    pergunta: "Em qual modelo o provedor fornece a infraestrutura e o sistema operacional prontos?",
     respostas: [
-      "A lógica cronológica e factual da narrativa",
-      "O uso correto de imagens",
-      "A opinião do autor",
-      "A pontuação do texto"
+      "SaaS",
+      "PaaS",
+      "IaaS",
+      "Nuvem Privada"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Qual exemplo representa um serviço SaaS?",
+    respostas: [
+      "Máquina virtual AWS EC2",
+      "Google Drive",
+      "Servidor Linux local",
+      "Banco de dados instalado no computador"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Na nuvem privada, a infraestrutura é:",
+    respostas: [
+      "Compartilhada entre várias empresas.",
+      "Exclusiva para uma única organização.",
+      "Obrigatoriamente pública.",
+      "Utilizada apenas para backup."
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O termo multitenancy está associado principalmente a qual modelo de implantação?",
+    respostas: [
+      "Nuvem Pública",
+      "Nuvem Privada",
+      "Nuvem Híbrida",
+      "On-Premise"
     ],
     correta: 0
   },
   {
-    pergunta: "Misturar elementos do Polo Norte ao descrever a Caatinga é um erro de:",
+    pergunta: "Qual é o principal objetivo da estratégia multi-cloud?",
     respostas: [
-      "Coesão referencial",
-      "Coerência figurativa",
-      "Coesão sequencial",
-      "Coerência externa"
+      "Utilizar apenas um provedor.",
+      "Reduzir a dependência de um único fornecedor.",
+      "Eliminar custos de TI.",
+      "Substituir a internet."
     ],
     correta: 1
   },
   {
-    pergunta: "A coerência argumentativa acontece quando:",
+    pergunta: "O modelo de pagamento mais comum na computação em nuvem é:",
     respostas: [
-      "O texto tem imagens",
-      "As ideias conduzem logicamente à conclusão",
-      "Há muitas palavras difíceis",
-      "O texto é longo"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "A coerência interna exige que:",
-    respostas: [
-      "O texto combine com a realidade",
-      "O texto não se contradiga",
-      "O texto tenha imagens",
-      "O texto use linguagem formal"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "A coerência externa exige que:",
-    respostas: [
-      "O texto seja compatível com a realidade e conhecimento de mundo",
-      "O texto tenha conectivos",
-      "O texto seja curto",
-      "O texto tenha muitas informações"
+      "Pagamento por uso.",
+      "Pagamento anual obrigatório.",
+      "Compra definitiva do hardware.",
+      "Pagamento por quantidade de funcionários."
     ],
     correta: 0
+  },
+  {
+    pergunta: "O que significa elasticidade na computação em nuvem?",
+    respostas: [
+      "Capacidade de alterar o código-fonte.",
+      "Capacidade de aumentar ou diminuir recursos conforme a demanda.",
+      "Capacidade de trocar de sistema operacional.",
+      "Capacidade de armazenar apenas arquivos."
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Qual provedor é considerado pioneiro e líder de mercado em computação em nuvem?",
+    respostas: [
+      "Google Cloud Platform",
+      "Microsoft Azure",
+      "Amazon Web Services (AWS)",
+      "Oracle Cloud"
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Por que a disponibilidade regional é importante ao escolher um provedor?",
+    respostas: [
+      "Para reduzir a latência e melhorar o desempenho.",
+      "Para aumentar o preço do serviço.",
+      "Para limitar o acesso dos usuários.",
+      "Para reduzir a capacidade de armazenamento."
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "A conformidade regulatória garante que:",
+    respostas: [
+      "Os servidores sejam mais rápidos.",
+      "O provedor siga leis de proteção de dados, como a LGPD.",
+      "O serviço seja gratuito.",
+      "Os dados nunca precisem de backup."
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "No modelo SaaS, o cliente gerencia:",
+    respostas: [
+      "Sistema operacional e aplicações.",
+      "Apenas os servidores.",
+      "Somente o uso do sistema.",
+      "Hardware e rede."
+    ],
+    correta: 2
   }
 ];
 const quizBody = document.getElementById("quizBody");
@@ -306,35 +269,37 @@ let timerInterval = null;
 let totalTimeStart = null;
 
 function validateQuestions(questionList) {
-    if (!Array.isArray(questionList) || questionList.length === 0) {
-        throw new Error("O array de perguntas não pode estar vazio.");
+  if (!Array.isArray(questionList) || questionList.length === 0) {
+    throw new Error("O array de perguntas não pode estar vazio.");
+  }
+
+  questionList.forEach((question, index) => {
+    const hasValidShape =
+      question &&
+      typeof question.pergunta === "string" &&
+      Array.isArray(question.respostas) &&
+      question.respostas.length >= 2 &&
+      Number.isInteger(question.correta) &&
+      question.correta >= 0 &&
+      question.correta < question.respostas.length;
+
+    if (!hasValidShape) {
+      throw new Error(
+        `Pergunta inválida no índice ${index}. Cada item precisa ter pergunta, respostas e uma alternativa correta válida.`
+      );
     }
-
-    questionList.forEach((question, index) => {
-        const hasValidShape =
-            question &&
-            typeof question.pergunta === "string" &&
-            Array.isArray(question.respostas) &&
-            question.respostas.length === 4 &&
-            Number.isInteger(question.correta) &&
-            question.correta >= 0 &&
-            question.correta < 4;
-
-        if (!hasValidShape) {
-            throw new Error(`Pergunta inválida no índice ${index}. Cada item precisa ter pergunta, 4 respostas e correta.`);
-        }
-    });
+  });
 }
 
 function shuffleQuestions(questionList) {
-    const shuffledQuestions = [...questionList];
+  const shuffledQuestions = [...questionList];
 
-    for (let index = shuffledQuestions.length - 1; index > 0; index -= 1) {
-        const randomIndex = Math.floor(Math.random() * (index + 1));
-        [shuffledQuestions[index], shuffledQuestions[randomIndex]] = [shuffledQuestions[randomIndex], shuffledQuestions[index]];
-    }
+  for (let index = shuffledQuestions.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1));
+    [shuffledQuestions[index], shuffledQuestions[randomIndex]] = [shuffledQuestions[randomIndex], shuffledQuestions[index]];
+  }
 
-    return shuffledQuestions;
+  return shuffledQuestions;
 }
 
 // Embaralha as alternativas de uma pergunta mantendo o índice correto
@@ -357,66 +322,66 @@ function shuffleAnswersForQuestion(question) {
 }
 
 function updateProgress() {
-    const currentNumber = currentQuestionIndex + 1;
-    progressChip.textContent = `Pergunta ${currentNumber} de ${quizPerguntas.length}`;
-    questionCount.textContent = `Pergunta ${currentNumber}`;
+  const currentNumber = currentQuestionIndex + 1;
+  progressChip.textContent = `Pergunta ${currentNumber} de ${quizPerguntas.length}`;
+  questionCount.textContent = `Pergunta ${currentNumber}`;
 }
 
 function clearFeedback() {
-    feedback.textContent = "";
-    feedback.className = "feedback";
+  feedback.textContent = "";
+  feedback.className = "feedback";
 }
 
 function renderQuestion() {
-    const currentQuestion = quizPerguntas[currentQuestionIndex];
+  const currentQuestion = quizPerguntas[currentQuestionIndex];
 
-    updateProgress();
-    questionText.textContent = currentQuestion.pergunta;
-    optionsGrid.innerHTML = "";
-    clearFeedback();
-    nextButton.disabled = true;
-    selectedAnswerIndex = null;
-    answered = false;
+  updateProgress();
+  questionText.textContent = currentQuestion.pergunta;
+  optionsGrid.innerHTML = "";
+  clearFeedback();
+  nextButton.disabled = true;
+  selectedAnswerIndex = null;
+  answered = false;
 
-    currentQuestion.respostas.forEach((answerText, answerIndex) => {
-        const optionButton = document.createElement("button");
-        optionButton.type = "button";
-        optionButton.className = "option-button";
-        optionButton.textContent = answerText;
-        optionButton.setAttribute("aria-pressed", "false");
+  currentQuestion.respostas.forEach((answerText, answerIndex) => {
+    const optionButton = document.createElement("button");
+    optionButton.type = "button";
+    optionButton.className = "option-button";
+    optionButton.textContent = answerText;
+    optionButton.setAttribute("aria-pressed", "false");
 
-        optionButton.addEventListener("click", () => selectAnswer(answerIndex, optionButton));
+    optionButton.addEventListener("click", () => selectAnswer(answerIndex, optionButton));
 
-        optionsGrid.appendChild(optionButton);
-    });
+    optionsGrid.appendChild(optionButton);
+  });
 
-    // iniciar temporizador para a pergunta atual
-    stopQuestionTimer();
-    timeLeft = QUESTION_TIME;
-    updateTimerUI();
-    startQuestionTimer();
+  // iniciar temporizador para a pergunta atual
+  stopQuestionTimer();
+  timeLeft = QUESTION_TIME;
+  updateTimerUI();
+  startQuestionTimer();
 
-    // marca início do tempo total quando a primeira pergunta é renderizada
-    if (!totalTimeStart) {
-      totalTimeStart = Date.now();
-    }
+  // marca início do tempo total quando a primeira pergunta é renderizada
+  if (!totalTimeStart) {
+    totalTimeStart = Date.now();
+  }
 }
 
 function selectAnswer(answerIndex, clickedButton) {
-    if (answered) {
-        return;
-    }
+  if (answered) {
+    return;
+  }
 
-    selectedAnswerIndex = answerIndex;
-    nextButton.disabled = false;
+  selectedAnswerIndex = answerIndex;
+  nextButton.disabled = false;
 
-    const optionButtons = [...optionsGrid.querySelectorAll(".option-button")];
-    optionButtons.forEach((button, index) => {
-        button.classList.toggle("selected", index === answerIndex);
-        button.setAttribute("aria-pressed", index === answerIndex ? "true" : "false");
-    });
+  const optionButtons = [...optionsGrid.querySelectorAll(".option-button")];
+  optionButtons.forEach((button, index) => {
+    button.classList.toggle("selected", index === answerIndex);
+    button.setAttribute("aria-pressed", index === answerIndex ? "true" : "false");
+  });
 
-    clickedButton.focus();
+  clickedButton.focus();
 }
 
 function confirmAnswer(forced = false) {
@@ -503,24 +468,24 @@ function formatTime(seconds) {
 }
 
 function goToNextStep() {
-    if (!answered) {
-        confirmAnswer();
-        return;
-    }
+  if (!answered) {
+    confirmAnswer();
+    return;
+  }
 
-    if (currentQuestionIndex < quizPerguntas.length - 1) {
-        currentQuestionIndex += 1;
-        nextButton.textContent = "Próxima pergunta";
-        renderQuestion();
-        return;
-    }
+  if (currentQuestionIndex < quizPerguntas.length - 1) {
+    currentQuestionIndex += 1;
+    nextButton.textContent = "Próxima pergunta";
+    renderQuestion();
+    return;
+  }
 
-    showResult();
+  showResult();
 }
 
 function showResult() {
-    const totalQuestions = quizPerguntas.length;
-    const percentage = Math.round((score / totalQuestions) * 100);
+  const totalQuestions = quizPerguntas.length;
+  const percentage = Math.round((score / totalQuestions) * 100);
 
   // stop any running timer
   stopQuestionTimer();
@@ -552,19 +517,19 @@ function showResult() {
 }
 
 function restartQuiz() {
-    currentQuestionIndex = 0;
-    selectedAnswerIndex = null;
-    score = 0;
-    wrongAnswers = 0;
-    answered = false;
-    quizPerguntas = shuffleQuestions(perguntas).map(shuffleAnswersForQuestion);
-    totalTimeStart = null;
+  currentQuestionIndex = 0;
+  selectedAnswerIndex = null;
+  score = 0;
+  wrongAnswers = 0;
+  answered = false;
+  quizPerguntas = shuffleQuestions(perguntas).map(shuffleAnswersForQuestion);
+  totalTimeStart = null;
 
-    resultPanel.classList.add("hidden");
-    quizBody.classList.remove("hidden");
-    nextButton.textContent = "Próxima pergunta";
+  resultPanel.classList.add("hidden");
+  quizBody.classList.remove("hidden");
+  nextButton.textContent = "Próxima pergunta";
 
-    renderQuestion();
+  renderQuestion();
 }
 
 validateQuestions(perguntas);
