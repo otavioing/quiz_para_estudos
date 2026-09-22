@@ -48,6 +48,10 @@
             <div class="timer-text" id="timerText">00:00</div>
           </div>
 
+          <button class="summary-button" id="summaryButton" type="button">
+            Consultar Resumo
+          </button>
+
           <button class="next-button" id="nextButton" type="button" disabled>
             Próxima pergunta
           </button>
@@ -86,6 +90,20 @@
         </div>
       </section>
     </main>
+
+    <div class="summary-modal hidden" id="summaryModal" role="dialog" aria-modal="true" aria-labelledby="summaryTitle">
+      <div class="summary-card">
+        <div class="summary-header">
+          <h2 id="summaryTitle">Resumo da matéria</h2>
+          <button class="close-button" id="closeSummaryButton" type="button" aria-label="Fechar resumo">
+            &times;
+          </button>
+        </div>
+        <div class="summary-content" id="summaryContent" aria-live="polite">
+          Carregando resumo...
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

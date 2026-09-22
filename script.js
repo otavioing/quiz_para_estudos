@@ -1,238 +1,406 @@
 const perguntas = [
   {
-    pergunta: "O que caracteriza o modelo SaaS (Software como Serviço)?",
+    pergunta: "O que é um Sistema Operacional (SO)?",
     respostas: [
-      "É exclusivo para armazenamento de dados em servidores locais.",
-      "Permite ao usuário gerenciar o sistema operacional e aplicações.",
-      "Oferece apenas infraestrutura física, sem software.",
-      "Fornece aplicações prontas para uso, acessíveis via internet.",
-      "Exige instalação local de todos os softwares."
-    ],
-    correta: 3
-  },
-  {
-    pergunta: "Qual das opções abaixo é uma característica da nuvem pública?",
-    respostas: [
-      "Não permite escalabilidade de recursos.",
-      "É dedicada exclusivamente a uma única organização.",
-      "Exige instalação de hardware local pelo cliente.",
-      "É gerenciada por provedores externos e atende múltiplos clientes.",
-      "Oferece apenas serviços de backup."
-    ],
-    correta: 3
-  },
-  {
-    pergunta: "No modelo IaaS, o cliente é responsável por gerenciar:",
-    respostas: [
-      "Somente a rede física.",
-      "Sistema operacional, aplicações e dados.",
-      "Apenas o banco de dados.",
-      "Apenas o uso da aplicação.",
-      "Somente o hardware físico."
+      "Um dispositivo responsável por armazenar arquivos",
+      "Um software que gerencia os dispositivos do sistema e atua como interface entre usuário e hardware",
+      "Um programa utilizado apenas para acessar a internet",
+      "Um hardware responsável pelo processamento de dados"
     ],
     correta: 1
   },
   {
-    pergunta: "Qual provedor de nuvem é reconhecido por sua especialização em Big Data e Machine Learning?",
+    pergunta: "Quais são as duas principais funções de um Sistema Operacional?",
     respostas: [
-      "Oracle Cloud",
-      "Google Cloud Platform (GCP)",
-      "Amazon Web Services (AWS)",
-      "IBM Cloud",
-      "Microsoft Azure"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que diferencia a nuvem híbrida das demais?",
-    respostas: [
-      "É utilizada apenas por pequenas empresas.",
-      "Oferece apenas serviços de armazenamento.",
-      "Não permite integração entre diferentes ambientes.",
-      "Combina nuvem pública e privada, permitindo portabilidade de dados e aplicações.",
-      "É exclusiva para uso doméstico."
-    ],
-    correta: 3
-  },
-  {
-    pergunta: "Qual das alternativas abaixo NÃO é um benefício da abordagem multi-cloud?",
-    respostas: [
-      "Aumenta a dependência de um único provedor.",
-      "Permite otimização de custos.",
-      "Oferece flexibilidade na escolha de serviços.",
-      "Reduz riscos de indisponibilidade.",
-      "Aumenta a resiliência dos sistemas."
+      "Interface/Abstração e Gerenciador de Recursos",
+      "Processamento e Armazenamento",
+      "Segurança e Internet",
+      "Memória e Arquivos"
     ],
     correta: 0
   },
   {
-    pergunta: "No modelo PaaS, o usuário gerencia:",
+    pergunta: "Qual é a função de Interface/Abstração de um Sistema Operacional?",
     respostas: [
-      "Todo o hardware e rede física.",
-      "Apenas o banco de dados.",
-      "Apenas aplicações e dados.",
-      "Sistema operacional e hardware.",
-      "Somente o uso da aplicação."
+      "Aumentar a velocidade da CPU",
+      "Esconder a complexidade do hardware para o usuário e programador",
+      "Criar novos dispositivos de hardware",
+      "Executar somente programas do sistema"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O que faz o SO como Gerenciador de Recursos?",
+    respostas: [
+      "Aloca CPU, memória e dispositivos de Entrada/Saída entre as aplicações",
+      "Impede que os programas utilizem memória",
+      "Substitui completamente o hardware",
+      "Executa apenas uma aplicação por vez"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Em qual modo as aplicações normalmente são executadas?",
+    respostas: [
+      "Modo Kernel",
+      "Modo Núcleo",
+      "Modo Usuário",
+      "Modo Hardware"
     ],
     correta: 2
   },
   {
-    pergunta: "Qual das opções abaixo é um critério importante para escolher um provedor de nuvem?",
+    pergunta: "Qual é uma característica do Modo Usuário (User Mode)?",
     respostas: [
-      "Quantidade de funcionários do provedor.",
-      "Disponibilidade regional e conformidade regulatória.",
-      "Localização do escritório central do provedor.",
-      "Apenas o preço do serviço.",
-      "Número de redes sociais do provedor."
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Entre os três grandes provedores de nuvem, qual possui a maior cobertura regional?",
-    respostas: [
-      "Microsoft Azure",
-      "Amazon Web Services (AWS)",
-      "Oracle Cloud",
-      "IBM Cloud",
-      "Google Cloud Platform (GCP)"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Qual das alternativas abaixo é uma vantagem da computação em nuvem?",
-    respostas: [
-      "Acesso restrito a partir de um único local.",
-      "Pagamento fixo independente do uso.",
-      "Necessidade de compra antecipada de servidores físicos.",
-      "Atualizações manuais obrigatórias pelo usuário.",
-      "Elasticidade e escalabilidade automáticas de recursos."
-    ],
-    correta: 4
-  },
-
-  // QUESTÕES EXTRAS
-
-  {
-    pergunta: "Qual modelo de serviço oferece maior controle e flexibilidade ao cliente?",
-    respostas: [
-      "SaaS",
-      "PaaS",
-      "IaaS",
-      "Multi-cloud"
+      "Possui acesso total ao hardware",
+      "Executa instruções privilegiadas",
+      "As aplicações não possuem acesso direto ao hardware",
+      "É o espaço onde o núcleo do SO é executado"
     ],
     correta: 2
   },
   {
-    pergunta: "Em qual modelo o provedor fornece a infraestrutura e o sistema operacional prontos?",
+    pergunta: "O que caracteriza o Modo Kernel (Kernel Mode)?",
     respostas: [
-      "SaaS",
-      "PaaS",
-      "IaaS",
-      "Nuvem Privada"
+      "É o espaço onde as aplicações comuns são executadas",
+      "Possui acesso total ao hardware e pode executar instruções privilegiadas",
+      "Não possui acesso à memória",
+      "Executa somente programas de usuário"
     ],
     correta: 1
   },
   {
-    pergunta: "Qual exemplo representa um serviço SaaS?",
+    pergunta: "O que são sistemas operacionais Monoprogramáveis ou Monotarefa?",
     respostas: [
-      "Máquina virtual AWS EC2",
-      "Google Drive",
-      "Servidor Linux local",
-      "Banco de dados instalado no computador"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Na nuvem privada, a infraestrutura é:",
-    respostas: [
-      "Compartilhada entre várias empresas.",
-      "Exclusiva para uma única organização.",
-      "Obrigatoriamente pública.",
-      "Utilizada apenas para backup."
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O termo multitenancy está associado principalmente a qual modelo de implantação?",
-    respostas: [
-      "Nuvem Pública",
-      "Nuvem Privada",
-      "Nuvem Híbrida",
-      "On-Premise"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Qual é o principal objetivo da estratégia multi-cloud?",
-    respostas: [
-      "Utilizar apenas um provedor.",
-      "Reduzir a dependência de um único fornecedor.",
-      "Eliminar custos de TI.",
-      "Substituir a internet."
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O modelo de pagamento mais comum na computação em nuvem é:",
-    respostas: [
-      "Pagamento por uso.",
-      "Pagamento anual obrigatório.",
-      "Compra definitiva do hardware.",
-      "Pagamento por quantidade de funcionários."
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "O que significa elasticidade na computação em nuvem?",
-    respostas: [
-      "Capacidade de alterar o código-fonte.",
-      "Capacidade de aumentar ou diminuir recursos conforme a demanda.",
-      "Capacidade de trocar de sistema operacional.",
-      "Capacidade de armazenar apenas arquivos."
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Qual provedor é considerado pioneiro e líder de mercado em computação em nuvem?",
-    respostas: [
-      "Google Cloud Platform",
-      "Microsoft Azure",
-      "Amazon Web Services (AWS)",
-      "Oracle Cloud"
+      "Sistemas que executam várias tarefas simultaneamente",
+      "Sistemas que possuem vários processadores",
+      "Sistemas que executam apenas uma tarefa por vez",
+      "Sistemas que funcionam somente em rede"
     ],
     correta: 2
   },
   {
-    pergunta: "Por que a disponibilidade regional é importante ao escolher um provedor?",
+    pergunta: "Nos sistemas Monoprogramáveis/Monotarefa, os recursos do sistema ficam:",
     respostas: [
-      "Para reduzir a latência e melhorar o desempenho.",
-      "Para aumentar o preço do serviço.",
-      "Para limitar o acesso dos usuários.",
-      "Para reduzir a capacidade de armazenamento."
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "A conformidade regulatória garante que:",
-    respostas: [
-      "Os servidores sejam mais rápidos.",
-      "O provedor siga leis de proteção de dados, como a LGPD.",
-      "O serviço seja gratuito.",
-      "Os dados nunca precisem de backup."
+      "Compartilhados entre vários programas",
+      "Dedicados ao programa atual",
+      "Desativados durante a execução",
+      "Disponíveis somente para a rede"
     ],
     correta: 1
   },
   {
-    pergunta: "No modelo SaaS, o cliente gerencia:",
+    pergunta: "O que caracteriza um sistema Multiprogramável ou Multitarefa?",
     respostas: [
-      "Sistema operacional e aplicações.",
-      "Apenas os servidores.",
-      "Somente o uso do sistema.",
-      "Hardware e rede."
+      "Executa somente um programa por vez",
+      "Possui obrigatoriamente dois processadores",
+      "Compartilha recursos entre várias aplicações e usuários de forma concorrente",
+      "Não permite o compartilhamento de memória"
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "O que caracteriza um sistema Multiprocessado?",
+    respostas: [
+      "Possui dois ou mais processadores (CPUs)",
+      "Executa apenas uma tarefa",
+      "Possui apenas um processador",
+      "Funciona somente sem conexão de rede"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "O que caracteriza um sistema fortemente acoplado?",
+    respostas: [
+      "Possui computadores independentes conectados por rede",
+      "Possui múltiplos processadores que compartilham uma única memória física e um único SO",
+      "Possui apenas um processador",
+      "Possui vários sistemas operacionais independentes na mesma máquina"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O que caracteriza um sistema fracamente acoplado?",
+    respostas: [
+      "Múltiplos processadores compartilham uma única memória física",
+      "Sistemas independentes conectados por rede funcionando em conjunto",
+      "Um único computador executando vários programas",
+      "Um único processador compartilhando várias memórias"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Qual das opções apresenta exemplos de sistemas de uso específico?",
+    respostas: [
+      "Mainframes, servidores, sistemas distribuídos, sistemas de tempo real e sistemas embarcados",
+      "Somente computadores pessoais e smartphones",
+      "Somente sistemas monotarefa",
+      "Apenas sistemas utilizados para jogos"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "O que caracteriza um Sistema de Tempo Real?",
+    respostas: [
+      "Ele executa apenas uma tarefa",
+      "Ele não possui memória",
+      "Prazos rígidos de execução não podem falhar",
+      "Ele funciona somente conectado à internet"
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "O que é um processo?",
+    respostas: [
+      "Um arquivo armazenado no computador",
+      "Um programa em execução contendo dados de entrada, saída e um estado",
+      "Uma parte física do processador",
+      "Um dispositivo de entrada"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Em qual estado um processo está sendo criado ou carregado na memória?",
+    respostas: [
+      "Pronto",
+      "Executando",
+      "Novo",
+      "Terminado"
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Em qual estado o processo está em memória aguardando a alocação do processador?",
+    respostas: [
+      "Pronto",
+      "Novo",
+      "Suspenso",
+      "Terminado"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Em qual estado o processo está sendo processado pela CPU naquele momento?",
+    respostas: [
+      "Pronto",
+      "Executando",
+      "Suspenso",
+      "Novo"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O que caracteriza o estado Suspenso, Espera ou Bloqueado?",
+    respostas: [
+      "O processo terminou sua execução",
+      "O processo está aguardando um evento de E/S ou recurso externo",
+      "O processo está sendo executado pela CPU",
+      "O processo acabou de ser criado"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O que acontece com um processo no estado Terminado?",
+    respostas: [
+      "Ele aguarda a CPU",
+      "Ele está sendo criado",
+      "Sua execução foi finalizada e ele está pronto para liberar memória",
+      "Ele aguarda um evento de Entrada/Saída"
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Qual é a função do escalonador de processos?",
+    respostas: [
+      "Criar novos processadores",
+      "Decidir qual processo da fila de Pronto ocupará a CPU",
+      "Controlar somente a memória",
+      "Encerrar todos os processos"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O que caracteriza um algoritmo de escalonamento não-preemptivo?",
+    respostas: [
+      "O SO interrompe obrigatoriamente o processo",
+      "O processo retém a CPU até terminar sua execução espontaneamente",
+      "Todos os processos são executados ao mesmo tempo",
+      "O processo nunca utiliza a CPU"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O que caracteriza um algoritmo de escalonamento preemptivo?",
+    respostas: [
+      "O processo nunca pode ser interrompido",
+      "O SO pode interromper forçadamente o processo em execução",
+      "A CPU executa somente um processo durante todo o sistema",
+      "Os processos são executados somente na ordem de chegada"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O que significa FIFO (First-In, First-Out)?",
+    respostas: [
+      "O último processo a chegar é executado primeiro",
+      "Os processos são atendidos na ordem de chegada",
+      "O processo mais curto sempre é executado primeiro",
+      "Os processos são escolhidos por prioridade"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O algoritmo FIFO é:",
+    respostas: [
+      "Preemptivo",
+      "Não-preemptivo",
+      "Sempre baseado em prioridade",
+      "Baseado em quantum"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Qual é uma desvantagem do algoritmo FIFO?",
+    respostas: [
+      "Não consegue executar processos longos",
+      "Um processo longo na frente pode atrasar processos curtos",
+      "Sempre causa starvation de processos curtos",
+      "Não utiliza a CPU"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Como funciona o algoritmo SJF (Shortest Job First)?",
+    respostas: [
+      "Executa primeiro o processo com maior prioridade",
+      "Executa primeiro o processo que chegou por último",
+      "Executa primeiro o processo com menor tempo de execução estimado",
+      "Executa todos os processos simultaneamente"
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "O algoritmo SJF é:",
+    respostas: [
+      "Preemptivo",
+      "Não-preemptivo",
+      "Baseado em quantum",
+      "Exclusivamente distribuído"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Qual é uma possível desvantagem do SJF?",
+    respostas: [
+      "Processos longos podem sofrer postergação (starvation)",
+      "Processos curtos nunca são executados",
+      "Não consegue ordenar processos",
+      "Sempre causa excesso de trocas de contexto"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Como funciona o algoritmo Round-Robin (Circular)?",
+    respostas: [
+      "Executa somente o processo de maior prioridade",
+      "Cada processo recebe uma fatia limitada de tempo de CPU",
+      "Executa primeiro o processo mais longo",
+      "Executa os processos sem interrupções"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O algoritmo Round-Robin é:",
+    respostas: [
+      "Não-preemptivo",
+      "Preemptivo",
+      "Exclusivamente baseado em prioridade",
+      "Monotarefa"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "No Round-Robin, como é chamada a fatia de tempo atribuída a cada processo?",
+    respostas: [
+      "Buffer",
+      "Quantum ou time-slice",
+      "Thread",
+      "Kernel"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O que pode acontecer quando o quantum do Round-Robin é muito pequeno?",
+    respostas: [
+      "O sistema deixa de executar processos",
+      "Há excesso de trocas de contexto",
+      "Todos os processos terminam imediatamente",
+      "Os processos passam a ser executados por prioridade"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O que pode acontecer quando o quantum do Round-Robin é muito grande?",
+    respostas: [
+      "A interatividade pode ser degradada",
+      "A CPU deixa de funcionar",
+      "Os processos passam a ser monotarefa",
+      "Todos os processos entram em estado Novo"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Como funciona o algoritmo de escalonamento por Prioridade?",
+    respostas: [
+      "Executa os processos com base nas prioridades atribuídas",
+      "Executa sempre o processo mais curto",
+      "Executa somente processos que chegaram primeiro",
+      "Divide a CPU igualmente entre todos os processos"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Segundo o resumo, o algoritmo de Prioridade é:",
+    respostas: [
+      "Preemptivo",
+      "Não-preemptivo",
+      "Baseado em quantum",
+      "Exclusivamente multitarefa"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O que caracteriza o algoritmo Circular com Prioridade?",
+    respostas: [
+      "Combina fatias de tempo com filas por prioridade",
+      "Executa somente o primeiro processo da fila",
+      "Executa sempre o processo mais longo",
+      "Não permite interrupção de processos"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Segundo o resumo, o Circular com Prioridade é:",
+    respostas: [
+      "Não-preemptivo",
+      "Preemptivo",
+      "Monotarefa",
+      "Exclusivamente distribuído"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Segundo o resumo, qual abordagem é apresentada como base para SOs de propósito geral, como Windows e Linux?",
+    respostas: [
+      "FIFO",
+      "SJF",
+      "Circular com Prioridade",
+      "Monotarefa"
     ],
     correta: 2
   }
 ];
+
 const quizBody = document.getElementById("quizBody");
 const resultPanel = document.getElementById("resultPanel");
 const progressChip = document.getElementById("progressChip");
@@ -253,6 +421,10 @@ const participantInput = document.getElementById("participantName");
 const startBtn = document.getElementById("startButton");
 const rankingListEl = document.getElementById("rankingList");
 const clearRankingBtn = document.getElementById("clearRanking");
+const summaryButton = document.getElementById("summaryButton");
+const summaryModal = document.getElementById("summaryModal");
+const closeSummaryButton = document.getElementById("closeSummaryButton");
+const summaryContent = document.getElementById("summaryContent");
 
 let participantName = null;
 
@@ -429,6 +601,10 @@ function confirmAnswer(forced = false) {
 }
 
 function startQuestionTimer() {
+  if (timerInterval !== null) {
+    return;
+  }
+
   updateTimerUI();
   timerInterval = setInterval(() => {
     timeLeft -= 1;
@@ -448,7 +624,7 @@ function startQuestionTimer() {
 }
 
 function stopQuestionTimer() {
-  if (timerInterval) {
+  if (timerInterval !== null) {
     clearInterval(timerInterval);
     timerInterval = null;
   }
@@ -458,6 +634,58 @@ function updateTimerUI() {
   const pct = Math.max(0, Math.min(1, timeLeft / QUESTION_TIME));
   if (timerFill) timerFill.style.width = `${Math.round(pct * 100)}%`;
   if (timerText) timerText.textContent = formatTime(timeLeft);
+}
+
+function renderSummary(summaryText) {
+  summaryContent.innerHTML = "";
+
+  if (!summaryText.trim()) {
+    summaryContent.textContent = "O resumo ainda não possui conteúdo disponível.";
+    return;
+  }
+
+  summaryText.split(/\r?\n/).forEach((line) => {
+    const paragraph = document.createElement("p");
+    const parts = line.split(/(\*\*[^*]+\*\*)/g);
+
+    parts.forEach((part) => {
+      if (part.startsWith("**") && part.endsWith("**")) {
+        const highlight = document.createElement("strong");
+        highlight.className = "summary-highlight";
+        highlight.textContent = part.slice(2, -2);
+        paragraph.appendChild(highlight);
+      } else {
+        paragraph.appendChild(document.createTextNode(part));
+      }
+    });
+
+    summaryContent.appendChild(paragraph);
+  });
+}
+
+async function openSummary() {
+  stopQuestionTimer();
+  summaryModal.classList.remove("hidden");
+  summaryContent.textContent = "Carregando resumo...";
+  closeSummaryButton.focus();
+
+  try {
+    const response = await fetch("resumo.txt", { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error("Resumo não encontrado");
+    }
+    renderSummary(await response.text());
+  } catch (error) {
+    summaryContent.textContent = "Não foi possível carregar o resumo agora. Verifique se o arquivo resumo.txt está na pasta do quiz.";
+  }
+}
+
+function closeSummary() {
+  summaryModal.classList.add("hidden");
+  if (!answered && timeLeft > 0) {
+    startQuestionTimer();
+  }
+  summaryButton.focus();
 }
 
 function formatTime(seconds) {
@@ -552,6 +780,18 @@ startBtn.addEventListener("click", () => {
 
 nextButton.addEventListener("click", goToNextStep);
 restartButton.addEventListener("click", restartQuiz);
+summaryButton.addEventListener("click", openSummary);
+closeSummaryButton.addEventListener("click", closeSummary);
+summaryModal.addEventListener("click", (event) => {
+  if (event.target === summaryModal) {
+    closeSummary();
+  }
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !summaryModal.classList.contains("hidden")) {
+    closeSummary();
+  }
+});
 
 if (clearRankingBtn) {
   clearRankingBtn.addEventListener("click", () => {

@@ -1,0 +1,117 @@
+# **1. Introdução aos Sistemas Operacionais (SO)**
+
+## **O que é um Sistema Operacional?**
+
+Um **Sistema Operacional (SO)** é um software que gerencia os dispositivos de um sistema computacional, atuando como **interface entre o usuário e o hardware**.
+
+## **As 2 Funções Principais do SO**
+
+**Interface / Abstração:** Esconder a complexidade do hardware para o usuário e programador.
+
+**Gerenciador de Recursos:** Alocar **CPU, memória e dispositivos de Entrada/Saída** de forma justa e organizada entre as aplicações.
+
+## **Modos de Acesso — Crucial para Provas**
+
+**Modo Usuário (User Mode):** Aplicações rodam aqui. Não têm acesso direto ao hardware e executam apenas **instruções sem privilégio**.
+
+**Modo Kernel / Núcleo (Kernel Mode):** Espaço restrito onde o **Sistema Operacional** roda. Tem **acesso total ao hardware** e executa **instruções privilegiadas**.
+
+---
+
+# **2. Tipos e Arquiteturas de Sistemas Operacionais**
+
+## **Tipos de Sistemas Operacionais**
+
+**Monoprogramáveis / Monotarefa:** Executam apenas **uma tarefa por vez**. Os recursos ficam dedicados ao programa atual.
+
+**Multiprogramáveis / Multitarefa:** Os recursos são **compartilhados entre várias aplicações e usuários** de forma concorrente.
+
+**Multiprocessados:** Sistemas com **dois ou mais processadores (CPUs)**.
+
+**Fortemente Acoplados:** Múltiplos processadores compartilham **uma única memória física e um único Sistema Operacional**.
+
+**Fracamente Acoplados:** Sistemas independentes conectados por **rede**, funcionando em conjunto, como em **clusters**.
+
+## **Sistemas de Uso Específico**
+
+Incluem:
+
+* **Mainframes**
+* **Servidores**
+* **Sistemas Distribuídos**
+* **Sistemas de Tempo Real:** possuem **prazos rígidos de execução que não podem falhar**.
+* **Sistemas Embarcados**
+
+---
+
+# **3. Conceito de Processos e Threads**
+
+## **O que é um Processo?**
+
+Um **processo** é um **programa em execução**, contendo dados de entrada, dados de saída e um estado.
+
+## **Estados de um Processo**
+
+**Novo:** O processo está sendo criado ou carregado na memória.
+
+**Pronto:** O processo está em memória e **aguarda a alocação do processador**.
+
+**Executando:** O processo está sendo **processado pela CPU** naquele momento.
+
+**Suspenso / Espera / Bloqueado:** O processo está **aguardando um evento de E/S ou um recurso externo**.
+
+**Terminado:** A execução foi finalizada e o processo está pronto para **liberar a memória**.
+
+---
+
+# **4. Escalonamento de Processos**
+
+## **Escalonador**
+
+O **Escalonador** é o módulo do Sistema Operacional responsável por decidir **qual processo da fila de "Pronto" ocupará a CPU**.
+
+## **Tipos de Algoritmo**
+
+**Não-Preemptivo:** O processo retém a CPU até **terminar sua execução espontaneamente**.
+
+**Preemptivo:** O Sistema Operacional pode **interromper forçadamente o processo em execução**, por tempo, prioridade ou evento de E/S.
+
+## **Principais Algoritmos**
+
+### **FIFO (First-In, First-Out)**
+
+**Não-preemptivo.**
+
+Atende os processos **na ordem de chegada**.
+
+**Desvantagem:** Pode ser ineficiente quando um **processo longo fica na frente de processos curtos**.
+
+### **SJF (Shortest Job First)**
+
+**Não-preemptivo.**
+
+Executa primeiro o processo com o **menor tempo de execução estimado**.
+
+**Desvantagem:** Pode causar **postergação (starvation)** de processos longos.
+
+### **Circular (Round-Robin)**
+
+**Preemptivo.**
+
+Cada processo recebe uma **fatia limitada de tempo de CPU**, chamada de **quantum** ou **time-slice**.
+
+**Desvantagem:** Um **quantum muito pequeno** gera excesso de trocas de contexto; um **quantum muito grande** prejudica a interatividade.
+
+### **Prioridade**
+
+**Não-preemptivo.**
+
+Executa os processos com base nas **prioridades atribuídas** a eles.
+
+### **Circular com Prioridade**
+
+**Preemptivo.**
+
+Combina **fatias de tempo (time-slice)** com **filas por prioridade**.
+
+É uma abordagem utilizada como base em **Sistemas Operacionais de propósito geral**, como **Windows e Linux**.

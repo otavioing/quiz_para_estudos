@@ -7,6 +7,7 @@ Este projeto contém um sistema de quiz totalmente genérico, implementado em HT
 - [index.html](index.html) — Interface do quiz.
 - [style.css](style.css) — Estilos modernos e responsivos.
 - [script.js](script.js) — Lógica do quiz e array `perguntas`.
+- [resumo.txt](resumo.txt) — Conteúdo exibido pelo botão **Consultar Resumo**.
 
 ## Como funciona (fluxo)
 
@@ -60,6 +61,8 @@ python -m http.server 8000
 
 - A ordem das perguntas é embaralhada por padrão (Fisher–Yates). As alternativas de cada pergunta também são embaralhadas automaticamente mantendo a referência da resposta correta.
 - Há um temporizador por pergunta (padrão: 20s). Se o tempo se esgotar, a pergunta é confirmada como errada e você pode avançar com o botão **Próxima pergunta**. Ao final é exibido o tempo total gasto.
+- O botão **Consultar Resumo** pausa o temporizador e abre o conteúdo de `resumo.txt`. Fechar o modal retoma a contagem do ponto em que ela foi pausada.
+- Use `**texto**` no arquivo de resumo para exibir esse trecho com fonte maior e destaque visual. Se o arquivo estiver vazio ou não for encontrado, o quiz exibe uma mensagem amigável.
  - O quiz pede o nome do participante ao iniciar e salva o resultado no `localStorage` para criar um ranking local no navegador.
 - O layout é responsivo e pode ser estilizado em `style.css`.
 - O código JavaScript foi escrito para ser legível e comentado — altere apenas o array `perguntas` para trocar o conteúdo do quiz.
