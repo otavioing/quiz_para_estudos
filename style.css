@@ -429,10 +429,66 @@ h1 {
   margin-bottom: 0;
 }
 
-.summary-highlight {
+.summary-content h1,
+.summary-content h2,
+.summary-content h3,
+.summary-content h4 {
+  margin: 24px 0 10px;
+  color: var(--text);
+  line-height: 1.25;
+}
+
+.summary-content h1:first-child,
+.summary-content h2:first-child,
+.summary-content h3:first-child {
+  margin-top: 0;
+}
+
+.summary-content ul,
+.summary-content ol {
+  margin: 0 0 16px;
+  padding-left: 24px;
+}
+
+.summary-content li + li {
+  margin-top: 6px;
+}
+
+.summary-content strong {
   color: #b9ffe9;
   font-size: 1.12em;
   font-weight: 800;
+}
+
+.summary-table-wrapper {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.summary-content table {
+  width: 100%;
+  min-width: 460px;
+  border-collapse: collapse;
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.summary-content th,
+.summary-content td {
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  text-align: left;
+  vertical-align: top;
+}
+
+.summary-content th {
+  color: #b9ffe9;
+  background: rgba(32, 201, 151, 0.14);
+  font-weight: 800;
+}
+
+.summary-content tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.04);
 }
 
 /* Ranking */

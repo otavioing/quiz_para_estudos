@@ -637,29 +637,19 @@ function updateTimerUI() {
 }
 
 function renderSummary(summaryText) {
-  summaryContent.innerHTML = "";
-
   if (!summaryText.trim()) {
     summaryContent.textContent = "O resumo ainda não possui conteúdo disponível.";
     return;
   }
 
-  summaryText.split(/\r?\n/).forEach((line) => {
-    const paragraph = document.createElement("p");
-    const parts = line.split(/(\*\*[^*]+\*\*)/g);
+  if (typeof marked === "undefined") {
+    summaryContent.textContent = "Não foi possível interpretar o resumo em Markdown.";
+    return;
+  }
 
-    parts.forEach((part) => {
-      if (part.startsWith("**") && part.endsWith("**")) {
-        const highlight = document.createElement("strong");
-        highlight.className = "summary-highlight";
-        highlight.textContent = part.slice(2, -2);
-        paragraph.appendChild(highlight);
-      } else {
-        paragraph.appendChild(document.createTextNode(part));
-      }
-    });
-
-    summaryContent.appendChild(paragraph);
+  summaryContent.innerHTML = marked.parse(summaryText, {
+    breaks: true,
+    gfm: true,
   });
 }
 
@@ -670,13 +660,13 @@ async function openSummary() {
   closeSummaryButton.focus();
 
   try {
-    const response = await fetch("resumo.txt", { cache: "no-store" });
+    const response = await fetch("resumo.md", { cache: "no-store" });
     if (!response.ok) {
       throw new Error("Resumo não encontrado");
     }
     renderSummary(await response.text());
   } catch (error) {
-    summaryContent.textContent = "Não foi possível carregar o resumo agora. Verifique se o arquivo resumo.txt está na pasta do quiz.";
+    summaryContent.textContent = "Não foi possível carregar o resumo agora. Verifique se o arquivo resumo.md está na pasta do quiz.";
   }
 }
 
