@@ -1,403 +1,652 @@
 const perguntas = [
+  // =========================
+  // ÉTICA E MORAL
+  // =========================
+
   {
-    pergunta: "O que é um Sistema Operacional (SO)?",
+    pergunta: "O que é Ética?",
     respostas: [
-      "Um dispositivo responsável por armazenar arquivos",
-      "Um software que gerencia os dispositivos do sistema e atua como interface entre usuário e hardware",
-      "Um programa utilizado apenas para acessar a internet",
-      "Um hardware responsável pelo processamento de dados"
+      "O conjunto de leis obrigatórias de um país",
+      "O estudo das ações humanas e dos princípios que orientam a boa convivência em sociedade",
+      "O conjunto de costumes de uma única pessoa",
+      "Uma regra específica criada por empresas"
     ],
     correta: 1
   },
   {
-    pergunta: "Quais são as duas principais funções de um Sistema Operacional?",
+    pergunta: "A palavra Ética vem do grego 'ethos', que significa:",
     respostas: [
-      "Interface/Abstração e Gerenciador de Recursos",
-      "Processamento e Armazenamento",
-      "Segurança e Internet",
-      "Memória e Arquivos"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Qual é a função de Interface/Abstração de um Sistema Operacional?",
-    respostas: [
-      "Aumentar a velocidade da CPU",
-      "Esconder a complexidade do hardware para o usuário e programador",
-      "Criar novos dispositivos de hardware",
-      "Executar somente programas do sistema"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que faz o SO como Gerenciador de Recursos?",
-    respostas: [
-      "Aloca CPU, memória e dispositivos de Entrada/Saída entre as aplicações",
-      "Impede que os programas utilizem memória",
-      "Substitui completamente o hardware",
-      "Executa apenas uma aplicação por vez"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Em qual modo as aplicações normalmente são executadas?",
-    respostas: [
-      "Modo Kernel",
-      "Modo Núcleo",
-      "Modo Usuário",
-      "Modo Hardware"
+      "Lei",
+      "Justiça",
+      "Costume",
+      "Sociedade"
     ],
     correta: 2
   },
   {
-    pergunta: "Qual é uma característica do Modo Usuário (User Mode)?",
+    pergunta: "A Ética está relacionada principalmente a:",
     respostas: [
-      "Possui acesso total ao hardware",
-      "Executa instruções privilegiadas",
-      "As aplicações não possuem acesso direto ao hardware",
-      "É o espaço onde o núcleo do SO é executado"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "O que caracteriza o Modo Kernel (Kernel Mode)?",
-    respostas: [
-      "É o espaço onde as aplicações comuns são executadas",
-      "Possui acesso total ao hardware e pode executar instruções privilegiadas",
-      "Não possui acesso à memória",
-      "Executa somente programas de usuário"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que são sistemas operacionais Monoprogramáveis ou Monotarefa?",
-    respostas: [
-      "Sistemas que executam várias tarefas simultaneamente",
-      "Sistemas que possuem vários processadores",
-      "Sistemas que executam apenas uma tarefa por vez",
-      "Sistemas que funcionam somente em rede"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Nos sistemas Monoprogramáveis/Monotarefa, os recursos do sistema ficam:",
-    respostas: [
-      "Compartilhados entre vários programas",
-      "Dedicados ao programa atual",
-      "Desativados durante a execução",
-      "Disponíveis somente para a rede"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que caracteriza um sistema Multiprogramável ou Multitarefa?",
-    respostas: [
-      "Executa somente um programa por vez",
-      "Possui obrigatoriamente dois processadores",
-      "Compartilha recursos entre várias aplicações e usuários de forma concorrente",
-      "Não permite o compartilhamento de memória"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "O que caracteriza um sistema Multiprocessado?",
-    respostas: [
-      "Possui dois ou mais processadores (CPUs)",
-      "Executa apenas uma tarefa",
-      "Possui apenas um processador",
-      "Funciona somente sem conexão de rede"
+      "Filosofia, cultura e convivência social",
+      "Economia, política e tecnologia",
+      "Matemática, ciência e tecnologia",
+      "Somente às leis de um país"
     ],
     correta: 0
   },
   {
-    pergunta: "O que caracteriza um sistema fortemente acoplado?",
+    pergunta: "Qual pergunta representa uma reflexão ética?",
     respostas: [
-      "Possui computadores independentes conectados por rede",
-      "Possui múltiplos processadores que compartilham uma única memória física e um único SO",
-      "Possui apenas um processador",
-      "Possui vários sistemas operacionais independentes na mesma máquina"
+      "Qual é a regra da empresa?",
+      "Por que isso é errado? É justo? Quem é afetado?",
+      "Qual é o preço desse produto?",
+      "Qual é o horário de funcionamento?"
     ],
     correta: 1
   },
   {
-    pergunta: "O que caracteriza um sistema fracamente acoplado?",
+    pergunta: "O que é Moral?",
     respostas: [
-      "Múltiplos processadores compartilham uma única memória física",
-      "Sistemas independentes conectados por rede funcionando em conjunto",
-      "Um único computador executando vários programas",
-      "Um único processador compartilhando várias memórias"
+      "O estudo filosófico das ações humanas",
+      "O conjunto de valores, normas e costumes que orientam o comportamento",
+      "O conjunto de leis de um país",
+      "Apenas as regras existentes no ambiente de trabalho"
     ],
     correta: 1
   },
   {
-    pergunta: "Qual das opções apresenta exemplos de sistemas de uso específico?",
+    pergunta: "A palavra Moral vem do latim 'mores', que significa:",
     respostas: [
-      "Mainframes, servidores, sistemas distribuídos, sistemas de tempo real e sistemas embarcados",
-      "Somente computadores pessoais e smartphones",
-      "Somente sistemas monotarefa",
-      "Apenas sistemas utilizados para jogos"
+      "Costume",
+      "Lei",
+      "Liberdade",
+      "Poder"
     ],
     correta: 0
   },
   {
-    pergunta: "O que caracteriza um Sistema de Tempo Real?",
+    pergunta: "Qual é a principal diferença entre Ética e Moral?",
     respostas: [
-      "Ele executa apenas uma tarefa",
-      "Ele não possui memória",
-      "Prazos rígidos de execução não podem falhar",
-      "Ele funciona somente conectado à internet"
+      "Ética é lei e Moral é punição",
+      "Ética é reflexão sobre como devemos agir; Moral é o conjunto de valores e normas que orientam nossas ações",
+      "Ética pertence às empresas e Moral pertence ao governo",
+      "Não existe diferença entre Ética e Moral"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "A Moral está mais relacionada:",
+    respostas: [
+      "À reflexão filosófica sobre as ações",
+      "Aos valores e regras que orientam o indivíduo",
+      "À criação das leis federais",
+      "À administração das empresas"
+    ],
+    correta: 1
+  },
+
+  // =========================
+  // ÉTICA PROFISSIONAL
+  // =========================
+
+  {
+    pergunta: "O que é Ética Profissional?",
+    respostas: [
+      "A aplicação dos princípios éticos no ambiente de trabalho",
+      "O conjunto de leis trabalhistas",
+      "Apenas as regras internas de uma empresa",
+      "A forma como uma empresa aumenta seus lucros"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "A Ética Profissional orienta como o profissional deve agir com:",
+    respostas: [
+      "Somente seus superiores",
+      "Somente seus clientes",
+      "Colegas, clientes, empresas e sociedade",
+      "Somente outros profissionais da mesma área"
     ],
     correta: 2
   },
   {
-    pergunta: "O que é um processo?",
+    pergunta: "No contexto da Ética Profissional, o conceito de 'Fazer' está relacionado a:",
     respostas: [
-      "Um arquivo armazenado no computador",
-      "Um programa em execução contendo dados de entrada, saída e um estado",
-      "Uma parte física do processador",
-      "Um dispositivo de entrada"
+      "Conduta e atitudes",
+      "Competência, eficiência e eficácia",
+      "Valores pessoais",
+      "Responsabilidade ambiental"
     ],
     correta: 1
   },
   {
-    pergunta: "Em qual estado um processo está sendo criado ou carregado na memória?",
+    pergunta: "No contexto da Ética Profissional, o conceito de 'Agir' está relacionado a:",
     respostas: [
-      "Pronto",
-      "Executando",
-      "Novo",
-      "Terminado"
+      "Competência técnica",
+      "Eficiência",
+      "Conduta e atitudes do profissional",
+      "Produtividade"
     ],
     correta: 2
   },
   {
-    pergunta: "Em qual estado o processo está em memória aguardando a alocação do processador?",
+    pergunta: "O que são códigos de ética profissionais?",
     respostas: [
-      "Pronto",
-      "Novo",
-      "Suspenso",
-      "Terminado"
+      "Leis que servem para todos os cidadãos",
+      "Normas que estabelecem regras obrigatórias para determinadas profissões",
+      "Sugestões opcionais para empresas",
+      "Regras utilizadas apenas por estudantes"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Além dos códigos de ética profissionais, as empresas podem possuir:",
+    respostas: [
+      "Códigos de conduta e regulamentos internos",
+      "Constituições próprias",
+      "Leis federais próprias",
+      "Poder Judiciário interno"
     ],
     correta: 0
   },
   {
-    pergunta: "Em qual estado o processo está sendo processado pela CPU naquele momento?",
+    pergunta: "O que é assédio moral?",
     respostas: [
-      "Pronto",
-      "Executando",
-      "Suspenso",
-      "Novo"
+      "Uma forma de comportamento que busca constranger, humilhar ou desqualificar uma pessoa",
+      "Uma avaliação profissional realizada pela empresa",
+      "Uma regra de comportamento no ambiente de trabalho",
+      "Uma forma de treinamento profissional"
     ],
-    correta: 1
+    correta: 0
   },
   {
-    pergunta: "O que caracteriza o estado Suspenso, Espera ou Bloqueado?",
+    pergunta: "O assédio moral pode ocorrer, muitas vezes, por meio de:",
     respostas: [
-      "O processo terminou sua execução",
-      "O processo está aguardando um evento de E/S ou recurso externo",
-      "O processo está sendo executado pela CPU",
-      "O processo acabou de ser criado"
+      "Abuso de poder",
+      "Treinamento profissional",
+      "Promoções",
+      "Avaliações positivas"
     ],
-    correta: 1
+    correta: 0
+  },
+
+  // =========================
+  // ÉTICA EMPRESARIAL
+  // =========================
+
+  {
+    pergunta: "O que é Ética Empresarial?",
+    respostas: [
+      "O comportamento da empresa baseado em princípios morais, honestidade e responsabilidade",
+      "A estratégia utilizada para aumentar os preços",
+      "O conjunto de técnicas de marketing",
+      "Apenas o cumprimento das leis trabalhistas"
+    ],
+    correta: 0
   },
   {
-    pergunta: "O que acontece com um processo no estado Terminado?",
+    pergunta: "Qual alternativa apresenta princípios relacionados à Ética Empresarial?",
     respostas: [
-      "Ele aguarda a CPU",
-      "Ele está sendo criado",
-      "Sua execução foi finalizada e ele está pronto para liberar memória",
-      "Ele aguarda um evento de Entrada/Saída"
+      "Legalidade, transparência, confiabilidade e responsabilidade",
+      "Lucro, velocidade, competição e publicidade",
+      "Produção, vendas, marketing e tecnologia",
+      "Hierarquia, autoridade, controle e punição"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Uma empresa ética deve demonstrar respeito por:",
+    respostas: [
+      "Somente seus clientes",
+      "Somente seus funcionários",
+      "Clientes, funcionários, fornecedores e comunidade",
+      "Somente seus proprietários"
     ],
     correta: 2
   },
   {
-    pergunta: "Qual é a função do escalonador de processos?",
+    pergunta: "Uma das consequências da Ética Empresarial pode ser:",
     respostas: [
-      "Criar novos processadores",
-      "Decidir qual processo da fila de Pronto ocupará a CPU",
-      "Controlar somente a memória",
-      "Encerrar todos os processos"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que caracteriza um algoritmo de escalonamento não-preemptivo?",
-    respostas: [
-      "O SO interrompe obrigatoriamente o processo",
-      "O processo retém a CPU até terminar sua execução espontaneamente",
-      "Todos os processos são executados ao mesmo tempo",
-      "O processo nunca utiliza a CPU"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que caracteriza um algoritmo de escalonamento preemptivo?",
-    respostas: [
-      "O processo nunca pode ser interrompido",
-      "O SO pode interromper forçadamente o processo em execução",
-      "A CPU executa somente um processo durante todo o sistema",
-      "Os processos são executados somente na ordem de chegada"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que significa FIFO (First-In, First-Out)?",
-    respostas: [
-      "O último processo a chegar é executado primeiro",
-      "Os processos são atendidos na ordem de chegada",
-      "O processo mais curto sempre é executado primeiro",
-      "Os processos são escolhidos por prioridade"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O algoritmo FIFO é:",
-    respostas: [
-      "Preemptivo",
-      "Não-preemptivo",
-      "Sempre baseado em prioridade",
-      "Baseado em quantum"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Qual é uma desvantagem do algoritmo FIFO?",
-    respostas: [
-      "Não consegue executar processos longos",
-      "Um processo longo na frente pode atrasar processos curtos",
-      "Sempre causa starvation de processos curtos",
-      "Não utiliza a CPU"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Como funciona o algoritmo SJF (Shortest Job First)?",
-    respostas: [
-      "Executa primeiro o processo com maior prioridade",
-      "Executa primeiro o processo que chegou por último",
-      "Executa primeiro o processo com menor tempo de execução estimado",
-      "Executa todos os processos simultaneamente"
+      "Aumento dos conflitos internos",
+      "Redução da confiança",
+      "Melhoria do ambiente de trabalho e redução de conflitos",
+      "Eliminação de todas as leis"
     ],
     correta: 2
   },
   {
-    pergunta: "O algoritmo SJF é:",
+    pergunta: "A Ética Empresarial também envolve responsabilidade com:",
     respostas: [
-      "Preemptivo",
-      "Não-preemptivo",
-      "Baseado em quantum",
-      "Exclusivamente distribuído"
+      "Somente os acionistas",
+      "O meio ambiente",
+      "Somente os concorrentes",
+      "Somente o governo"
+    ],
+    correta: 1
+  },
+
+  // =========================
+  // ÉTICA AMBIENTAL
+  // =========================
+
+  {
+    pergunta: "O que é Ética Ambiental?",
+    respostas: [
+      "A aplicação da ética somente nas empresas ambientais",
+      "A relação ética do ser humano com a natureza e outros seres vivos",
+      "Um conjunto de leis sobre empresas",
+      "Uma política voltada exclusivamente para animais domésticos"
     ],
     correta: 1
   },
   {
-    pergunta: "Qual é uma possível desvantagem do SJF?",
+    pergunta: "Segundo a Ética Ambiental, por que devemos preservar a natureza?",
     respostas: [
-      "Processos longos podem sofrer postergação (starvation)",
-      "Processos curtos nunca são executados",
-      "Não consegue ordenar processos",
-      "Sempre causa excesso de trocas de contexto"
+      "Porque a vida humana depende da preservação da natureza",
+      "Somente para aumentar a produção industrial",
+      "Porque todos os recursos naturais são infinitos",
+      "Somente para cumprir regras empresariais"
     ],
     correta: 0
   },
   {
-    pergunta: "Como funciona o algoritmo Round-Robin (Circular)?",
+    pergunta: "A Ética Ambiental defende que devemos considerar:",
     respostas: [
-      "Executa somente o processo de maior prioridade",
-      "Cada processo recebe uma fatia limitada de tempo de CPU",
-      "Executa primeiro o processo mais longo",
-      "Executa os processos sem interrupções"
+      "Somente nossas necessidades atuais",
+      "Os impactos de nossas ações sobre outros seres vivos",
+      "Somente os interesses econômicos",
+      "Apenas os impactos sobre seres humanos"
     ],
     correta: 1
   },
   {
-    pergunta: "O algoritmo Round-Robin é:",
+    pergunta: "A Ética Ambiental também considera importante:",
     respostas: [
-      "Não-preemptivo",
-      "Preemptivo",
-      "Exclusivamente baseado em prioridade",
-      "Monotarefa"
+      "Pensar apenas no presente",
+      "Preservar recursos para as futuras gerações",
+      "Utilizar todos os recursos disponíveis",
+      "Priorizar somente o crescimento econômico"
     ],
     correta: 1
   },
   {
-    pergunta: "No Round-Robin, como é chamada a fatia de tempo atribuída a cada processo?",
+    pergunta: "O que significa desenvolvimento sustentável?",
     respostas: [
-      "Buffer",
-      "Quantum ou time-slice",
-      "Thread",
-      "Kernel"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que pode acontecer quando o quantum do Round-Robin é muito pequeno?",
-    respostas: [
-      "O sistema deixa de executar processos",
-      "Há excesso de trocas de contexto",
-      "Todos os processos terminam imediatamente",
-      "Os processos passam a ser executados por prioridade"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que pode acontecer quando o quantum do Round-Robin é muito grande?",
-    respostas: [
-      "A interatividade pode ser degradada",
-      "A CPU deixa de funcionar",
-      "Os processos passam a ser monotarefa",
-      "Todos os processos entram em estado Novo"
+      "Atender às necessidades atuais sem prejudicar as necessidades das futuras gerações",
+      "Utilizar todos os recursos naturais disponíveis",
+      "Priorizar somente as necessidades das futuras gerações",
+      "Evitar qualquer tipo de desenvolvimento econômico"
     ],
     correta: 0
   },
   {
-    pergunta: "Como funciona o algoritmo de escalonamento por Prioridade?",
+    pergunta: "O que é a Agenda 2030?",
     respostas: [
-      "Executa os processos com base nas prioridades atribuídas",
-      "Executa sempre o processo mais curto",
-      "Executa somente processos que chegaram primeiro",
-      "Divide a CPU igualmente entre todos os processos"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Segundo o resumo, o algoritmo de Prioridade é:",
-    respostas: [
-      "Preemptivo",
-      "Não-preemptivo",
-      "Baseado em quantum",
-      "Exclusivamente multitarefa"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que caracteriza o algoritmo Circular com Prioridade?",
-    respostas: [
-      "Combina fatias de tempo com filas por prioridade",
-      "Executa somente o primeiro processo da fila",
-      "Executa sempre o processo mais longo",
-      "Não permite interrupção de processos"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Segundo o resumo, o Circular com Prioridade é:",
-    respostas: [
-      "Não-preemptivo",
-      "Preemptivo",
-      "Monotarefa",
-      "Exclusivamente distribuído"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Segundo o resumo, qual abordagem é apresentada como base para SOs de propósito geral, como Windows e Linux?",
-    respostas: [
-      "FIFO",
-      "SJF",
-      "Circular com Prioridade",
-      "Monotarefa"
+      "Um conjunto de leis brasileiras",
+      "Uma agenda empresarial voltada ao lucro",
+      "Um conjunto de objetivos da ONU voltados ao desenvolvimento sustentável",
+      "Um código de ética profissional"
     ],
     correta: 2
+  },
+  {
+    pergunta: "O que significa ODS?",
+    respostas: [
+      "Organização de Desenvolvimento Social",
+      "Objetivos de Desenvolvimento Sustentável",
+      "Organização de Direitos Sociais",
+      "Objetivos de Direito Sustentável"
+    ],
+    correta: 1
+  },
+
+  // =========================
+  // DIREITO
+  // =========================
+
+  {
+    pergunta: "Por que o Direito surgiu?",
+    respostas: [
+      "Para organizar a vida em sociedade e resolver conflitos",
+      "Para controlar somente as empresas",
+      "Para substituir a moral",
+      "Para eliminar os costumes da sociedade"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "O que é Direito?",
+    respostas: [
+      "Um conjunto de opiniões pessoais",
+      "Um conjunto de regras obrigatórias que organizam a sociedade e estabelecem limites para as ações",
+      "Somente um conjunto de costumes",
+      "Uma recomendação de comportamento"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "O que significa dizer que o Direito possui força coativa?",
+    respostas: [
+      "Suas regras são apenas recomendações",
+      "Suas regras são obrigatórias e podem gerar consequências quando não cumpridas",
+      "Suas regras só podem ser aplicadas pelas empresas",
+      "Suas regras não possuem punições"
+    ],
+    correta: 1
+  },
+
+  // =========================
+  // GERAÇÕES DOS DIREITOS
+  // =========================
+
+  {
+    pergunta: "Os direitos de 1ª geração estão relacionados principalmente a:",
+    respostas: [
+      "Direitos coletivos",
+      "Direitos sociais",
+      "Liberdades individuais",
+      "Direitos ambientais"
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Qual alternativa apresenta exemplos de direitos de 1ª geração?",
+    respostas: [
+      "Salário, férias e assistência social",
+      "Vida, liberdade e igualdade",
+      "Meio ambiente e direitos do consumidor",
+      "Educação, saúde e transporte"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Os direitos de 2ª geração estão relacionados principalmente a:",
+    respostas: [
+      "Liberdades individuais",
+      "Condições sociais, econômicas e políticas",
+      "Interesses exclusivamente ambientais",
+      "Direitos exclusivamente empresariais"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Qual alternativa apresenta exemplos de direitos de 2ª geração?",
+    respostas: [
+      "Vida, liberdade e igualdade",
+      "Salário, férias, voto e assistência social",
+      "Meio ambiente e direitos do consumidor",
+      "Liberdade de expressão e propriedade"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Os direitos de 3ª geração estão relacionados principalmente a:",
+    respostas: [
+      "Interesses individuais",
+      "Interesses da coletividade",
+      "Direitos trabalhistas individuais",
+      "Liberdades exclusivamente pessoais"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Qual alternativa apresenta exemplos de direitos de 3ª geração?",
+    respostas: [
+      "Vida e liberdade",
+      "Salário e férias",
+      "Meio ambiente saudável e direitos do consumidor",
+      "Voto e assistência social"
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Qual associação está correta?",
+    respostas: [
+      "1ª geração = Coletiva; 2ª = Individual; 3ª = Social",
+      "1ª geração = Individual; 2ª = Social; 3ª = Coletiva",
+      "1ª geração = Social; 2ª = Coletiva; 3ª = Individual",
+      "1ª geração = Ambiental; 2ª = Individual; 3ª = Social"
+    ],
+    correta: 1
+  },
+
+  // =========================
+  // LEI
+  // =========================
+
+  {
+    pergunta: "O que é uma Lei?",
+    respostas: [
+      "Uma opinião criada pela sociedade",
+      "Uma norma escrita e obrigatória criada por meio de um processo legislativo",
+      "Uma recomendação moral",
+      "Um costume que não possui obrigatoriedade"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "As leis federais são aplicadas:",
+    respostas: [
+      "Somente em um município",
+      "Somente em um estado",
+      "Em todo o país",
+      "Somente no Distrito Federal"
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "As leis estaduais são aplicadas:",
+    respostas: [
+      "Em todo o mundo",
+      "Dentro de um estado",
+      "Somente em um município",
+      "Em todo o território nacional"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "As leis municipais são aplicadas:",
+    respostas: [
+      "Dentro de um município",
+      "Em todo o país",
+      "Em todos os estados",
+      "Somente no Poder Judiciário"
+    ],
+    correta: 0
+  },
+
+  // =========================
+  // CONSTITUIÇÃO
+  // =========================
+
+  {
+    pergunta: "O que é a Constituição Federal?",
+    respostas: [
+      "Uma lei municipal",
+      "A Lei fundamental do país, que serve como base do sistema jurídico",
+      "Um código de ética profissional",
+      "Uma norma criada pelas empresas"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Uma lei que contradiz a Constituição pode ser considerada:",
+    respostas: [
+      "Municipal",
+      "Federal",
+      "Inconstitucional",
+      "Administrativa"
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Qual é a principal função da Constituição?",
+    respostas: [
+      "Organizar os poderes do Estado e estabelecer princípios, direitos e garantias",
+      "Criar regras somente para empresas",
+      "Definir os preços dos produtos",
+      "Substituir todas as leis municipais"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Em que data foi promulgada a Constituição Federal de 1988?",
+    respostas: [
+      "5 de outubro de 1988",
+      "7 de setembro de 1988",
+      "15 de novembro de 1988",
+      "1º de janeiro de 1988"
+    ],
+    correta: 0
+  },
+
+  // =========================
+  // TRÊS PODERES
+  // =========================
+
+  {
+    pergunta: "Quais são os três Poderes estabelecidos pela Constituição?",
+    respostas: [
+      "Federal, Estadual e Municipal",
+      "Executivo, Legislativo e Judiciário",
+      "Presidencial, Federal e Estadual",
+      "Civil, Militar e Judiciário"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Qual é a principal função do Poder Legislativo?",
+    respostas: [
+      "Julgar conflitos",
+      "Administrar o Estado",
+      "Criar e alterar leis",
+      "Executar políticas públicas"
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Qual é a principal função do Poder Executivo?",
+    respostas: [
+      "Criar leis",
+      "Administrar o Estado e executar políticas públicas",
+      "Julgar conflitos",
+      "Alterar a Constituição sozinho"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Qual é a principal função do Poder Judiciário?",
+    respostas: [
+      "Criar leis",
+      "Administrar o Estado",
+      "Julgar conflitos e aplicar o Direito",
+      "Criar políticas públicas"
+    ],
+    correta: 2
+  },
+
+  // =========================
+  // PROCESSO LEGISLATIVO
+  // =========================
+
+  {
+    pergunta: "Qual sequência representa, de forma simplificada, o processo de criação de uma lei?",
+    respostas: [
+      "Projeto → votação/aprovação → sanção ou veto → promulgação → publicação",
+      "Publicação → projeto → veto → votação → promulgação",
+      "Projeto → publicação → votação → criação do Estado",
+      "Votação → projeto → publicação → veto → promulgação"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Depois de publicada oficialmente, a lei:",
+    respostas: [
+      "Deixa de fazer parte do ordenamento jurídico",
+      "Passa a integrar o ordenamento jurídico conforme suas regras de vigência",
+      "Precisa ser aprovada novamente pela população",
+      "Deixa de ser obrigatória"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "As leis são identificadas principalmente por:",
+    respostas: [
+      "Nomes e símbolos",
+      "Números e artigos",
+      "Cores e códigos",
+      "Datas e assinaturas"
+    ],
+    correta: 1
+  },
+
+  // =========================
+  // DIREITO CONSTITUCIONAL
+  // =========================
+
+  {
+    pergunta: "O que é Direito Constitucional?",
+    respostas: [
+      "O ramo do Direito que estuda a Constituição, os poderes do Estado e os direitos e garantias fundamentais",
+      "O ramo que trata somente de contratos",
+      "O ramo que trata somente de empresas",
+      "O conjunto de regras municipais"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "A Constituição é responsável por:",
+    respostas: [
+      "Organizar os poderes do Estado e garantir direitos e liberdades",
+      "Criar somente leis municipais",
+      "Regular apenas relações trabalhistas",
+      "Definir somente crimes e penas"
+    ],
+    correta: 0
+  },
+
+  // =========================
+  // PEC
+  // =========================
+
+  {
+    pergunta: "O que é uma PEC?",
+    respostas: [
+      "Proposta de Emenda à Constituição",
+      "Projeto Especial de Controle",
+      "Programa Executivo Constitucional",
+      "Proposta Estadual de Constituição"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Para que serve uma PEC?",
+    respostas: [
+      "Para criar uma lei municipal",
+      "Para propor alterações na Constituição",
+      "Para substituir o Poder Judiciário",
+      "Para criar códigos de ética empresarial"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Qual é a sequência simplificada apresentada no resumo para aprovação de uma PEC?",
+    respostas: [
+      "Senado → Câmara → Presidente → publicação",
+      "Câmara → Senado → aprovação → promulgação",
+      "Presidente → Câmara → Senado → votação popular",
+      "Câmara → Presidente → Senado → promulgação"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Segundo o resumo, para uma PEC ser aprovada são necessários:",
+    respostas: [
+      "2/3 dos membros de uma Casa em um único turno",
+      "3/5 dos membros de cada Casa, em dois turnos de votação",
+      "Maioria simples apenas na Câmara",
+      "Votação popular obrigatória"
+    ],
+    correta: 1
   }
 ];
 
