@@ -3,31 +3,75 @@ const perguntas = [
         pergunta: "O que é uma classe abstrata em C#?",
         respostas: [
             "Uma classe que não pode ser instanciada diretamente e serve como base para outras classes",
-            "Uma classe que só possui atributos",
             "Uma classe que não pode possuir métodos",
-            "Uma classe que só pode ser usada em interfaces"
+            "Uma classe que só pode possuir atributos privados",
+            "Uma classe que não pode ser herdada"
         ],
         correta: 0
     },
 
     {
-        pergunta: "No código apresentado, qual classe é abstrata?",
+        pergunta: "Qual palavra-chave é utilizada para declarar uma classe abstrata?",
         respostas: [
-            "Carro",
-            "Bicicleta",
-            "Transporte",
-            "Aviao"
+            "virtual",
+            "override",
+            "abstract",
+            "interface"
         ],
         correta: 2
     },
 
     {
-        pergunta: "O que significa o método 'public abstract double CalcularTempoViagem(double distancia);'?",
+        pergunta: "No código da revisão, qual classe foi declarada como abstrata?",
         respostas: [
-            "O método já possui uma implementação",
-            "As classes filhas devem implementar esse método",
-            "O método só pode ser usado pelo Program.cs",
-            "O método é privado"
+            "Carro",
+            "Transporte",
+            "Bicicleta",
+            "IVeiculo"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "O que significa declarar um método como 'abstract'?",
+        respostas: [
+            "O método possui uma implementação completa",
+            "O método deve ser implementado pelas classes derivadas",
+            "O método só pode ser usado dentro da classe",
+            "O método não pode receber parâmetros"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "Para que serve a palavra-chave 'override' em C#?",
+        respostas: [
+            "Criar uma nova classe",
+            "Sobrescrever a implementação de um método herdado",
+            "Criar uma interface",
+            "Impedir que um método seja alterado"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "Por que Carro, Bicicleta e Aviao utilizam 'override' no método CalcularTempoViagem()?",
+        respostas: [
+            "Porque cada classe fornece sua própria implementação do método abstrato",
+            "Porque o método pertence à interface IVeiculo",
+            "Porque todo método público precisa usar override",
+            "Porque override cria automaticamente um objeto"
+        ],
+        correta: 0
+    },
+
+    {
+        pergunta: "O que significa 'public class Carro : Transporte'?",
+        respostas: [
+            "Carro implementa uma interface chamada Transporte",
+            "Carro herda da classe Transporte",
+            "Transporte herda de Carro",
+            "Carro é uma classe abstrata"
         ],
         correta: 1
     },
@@ -37,28 +81,28 @@ const perguntas = [
         respostas: [
             "Carro herda de Transporte e implementa IVeiculo",
             "Carro herda de duas classes",
-            "Carro é uma interface",
-            "Carro é uma classe abstrata"
+            "Carro implementa duas interfaces",
+            "Carro é uma interface"
         ],
         correta: 0
     },
 
     {
-        pergunta: "Qual é a função de uma interface no código?",
+        pergunta: "O que é uma interface em C#?",
         respostas: [
-            "Criar objetos automaticamente",
-            "Definir um contrato que a classe deve implementar",
-            "Substituir todas as classes abstratas",
-            "Armazenar valores"
+            "Um contrato que define membros que uma classe deve implementar",
+            "Uma classe que pode ser instanciada diretamente",
+            "Um tipo de variável",
+            "Uma classe que não pode ser herdada"
         ],
-        correta: 1
+        correta: 0
     },
 
     {
         pergunta: "Qual método é definido pela interface IVeiculo?",
         respostas: [
-            "CalcularTempoViagem()",
             "exibirtipo()",
+            "CalcularTempoViagem()",
             "mover()",
             "Main()"
         ],
@@ -66,102 +110,113 @@ const perguntas = [
     },
 
     {
-        pergunta: "Para que serve a palavra-chave 'override'?",
+        pergunta: "O que uma classe que implementa a interface IVeiculo deve fazer?",
         respostas: [
-            "Criar uma nova classe",
-            "Sobrescrever um método herdado",
-            "Criar uma interface",
-            "Criar um objeto"
+            "Implementar o método mover()",
+            "Implementar obrigatoriamente exibirtipo()",
+            "Criar outra interface",
+            "Ser obrigatoriamente abstrata"
+        ],
+        correta: 0
+    },
+
+    {
+        pergunta: "Qual conceito de POO está presente quando uma classe filha herda características de uma classe pai?",
+        respostas: [
+            "Abstração",
+            "Herança",
+            "Encapsulamento",
+            "Sobrecarga"
         ],
         correta: 1
     },
 
     {
-        pergunta: "Qual conceito de POO está presente quando Carro, Bicicleta e Aviao possuem diferentes implementações de CalcularTempoViagem()?",
+        pergunta: "Qual conceito permite que diferentes classes tenham diferentes comportamentos para um método com o mesmo nome?",
         respostas: [
-            "Encapsulamento",
-            "Herança",
             "Polimorfismo",
+            "Encapsulamento",
+            "Namespace",
             "Construtor"
         ],
+        correta: 0
+    },
+
+    {
+        pergunta: "No código, Carro, Bicicleta e Aviao possuem suas próprias versões de CalcularTempoViagem(). Isso representa:",
+        respostas: [
+            "Encapsulamento",
+            "Polimorfismo",
+            "Composição",
+            "Variável estática"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "É possível criar diretamente um objeto de uma classe abstrata usando 'new'?",
+        respostas: [
+            "Sim, sempre",
+            "Sim, mas somente dentro do Program.cs",
+            "Não",
+            "Somente se ela possuir uma interface"
+        ],
         correta: 2
     },
 
     {
-        pergunta: "O que acontece em 'Carro c1 = new Carro();'?",
+        pergunta: "Qual destas declarações está correta para criar um objeto da classe Carro?",
         respostas: [
-            "É criada uma classe Carro",
-            "É criado um objeto da classe Carro",
-            "É criada uma interface",
-            "É criado um método"
+            "Carro c1 = new Carro();",
+            "new Carro = c1();",
+            "Carro = new c1();",
+            "object Carro = c1;"
+        ],
+        correta: 0
+    },
+
+    {
+        pergunta: "Qual é a principal diferença entre abstract e override?",
+        respostas: [
+            "abstract declara algo que deve ser implementado; override fornece uma implementação sobrescrevendo um método herdado",
+            "abstract cria objetos e override cria classes",
+            "abstract é usado somente em interfaces e override somente em variáveis",
+            "Não existe diferença"
+        ],
+        correta: 0
+    },
+
+    {
+        pergunta: "O que acontece se uma classe herdar de uma classe abstrata e não implementar seus métodos abstratos?",
+        respostas: [
+            "O C# implementa os métodos automaticamente",
+            "A classe deve ser abstrata ou ocorrerá um erro de compilação",
+            "O programa ignora os métodos",
+            "Os métodos serão transformados em privados"
         ],
         correta: 1
     },
 
     {
-        pergunta: "O que o método exibirtipo() faz?",
+        pergunta: "Qual destas palavras-chave está relacionada diretamente à sobrescrita de métodos?",
         respostas: [
-            "Calcula o tempo da viagem",
-            "Exibe o tipo do transporte",
-            "Move o transporte",
-            "Lê a distância"
+            "override",
+            "new",
+            "using",
+            "namespace"
         ],
-        correta: 1
+        correta: 0
     },
 
     {
-        pergunta: "Qual velocidade é utilizada pelo Carro no cálculo?",
+        pergunta: "No exemplo, qual é a função da classe Transporte?",
         respostas: [
-            "20",
-            "100",
-            "500",
-            "1000"
+            "Ser uma classe base para os diferentes tipos de transporte",
+            "Ser uma interface",
+            "Criar todos os objetos automaticamente",
+            "Executar o método Main()"
         ],
-        correta: 1
-    },
-
-    {
-        pergunta: "Se a distância for 500 km, quanto tempo o Carro levará?",
-        respostas: [
-            "2 horas",
-            "5 horas",
-            "10 horas",
-            "50 horas"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "Se a distância for 100 km, quanto tempo a Bicicleta levará?",
-        respostas: [
-            "2 horas",
-            "5 horas",
-            "10 horas",
-            "20 horas"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "Se a distância for 1000 km, quanto tempo o Aviao levará?",
-        respostas: [
-            "1 hora",
-            "2 horas",
-            "5 horas",
-            "10 horas"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "É possível fazer 'Transporte t = new Transporte();' no código apresentado?",
-        respostas: [
-            "Sim, porque Transporte é pública",
-            "Sim, porque toda classe pode ser instanciada",
-            "Não, porque Transporte é abstrata",
-            "Não, porque Transporte é uma interface"
-        ],
-        correta: 2
+        correta: 0
     }
 ];
 
