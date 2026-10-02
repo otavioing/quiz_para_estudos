@@ -1,653 +1,587 @@
 const perguntas = [
-  // =========================
-  // ÉTICA E MORAL
-  // =========================
+    {
+        pergunta: "O que é uma classe abstrata em C#?",
+        respostas: [
+            "Uma classe que não pode possuir métodos",
+            "Uma classe que serve como base para outras classes e não pode ser instanciada diretamente",
+            "Uma classe que só pode ser usada por interfaces",
+            "Uma classe que obrigatoriamente possui apenas atributos privados"
+        ],
+        correta: 1
+    },
 
-  {
-    pergunta: "O que é Ética?",
-    respostas: [
-      "O conjunto de leis obrigatórias de um país",
-      "O estudo das ações humanas e dos princípios que orientam a boa convivência em sociedade",
-      "O conjunto de costumes de uma única pessoa",
-      "Uma regra específica criada por empresas"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "A palavra Ética vem do grego 'ethos', que significa:",
-    respostas: [
-      "Lei",
-      "Justiça",
-      "Costume",
-      "Sociedade"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "A Ética está relacionada principalmente a:",
-    respostas: [
-      "Filosofia, cultura e convivência social",
-      "Economia, política e tecnologia",
-      "Matemática, ciência e tecnologia",
-      "Somente às leis de um país"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Qual pergunta representa uma reflexão ética?",
-    respostas: [
-      "Qual é a regra da empresa?",
-      "Por que isso é errado? É justo? Quem é afetado?",
-      "Qual é o preço desse produto?",
-      "Qual é o horário de funcionamento?"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que é Moral?",
-    respostas: [
-      "O estudo filosófico das ações humanas",
-      "O conjunto de valores, normas e costumes que orientam o comportamento",
-      "O conjunto de leis de um país",
-      "Apenas as regras existentes no ambiente de trabalho"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "A palavra Moral vem do latim 'mores', que significa:",
-    respostas: [
-      "Costume",
-      "Lei",
-      "Liberdade",
-      "Poder"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Qual é a principal diferença entre Ética e Moral?",
-    respostas: [
-      "Ética é lei e Moral é punição",
-      "Ética é reflexão sobre como devemos agir; Moral é o conjunto de valores e normas que orientam nossas ações",
-      "Ética pertence às empresas e Moral pertence ao governo",
-      "Não existe diferença entre Ética e Moral"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "A Moral está mais relacionada:",
-    respostas: [
-      "À reflexão filosófica sobre as ações",
-      "Aos valores e regras que orientam o indivíduo",
-      "À criação das leis federais",
-      "À administração das empresas"
-    ],
-    correta: 1
-  },
+    {
+        pergunta: "No código apresentado, qual é a função da classe Transporte?",
+        respostas: [
+            "Criar diretamente os objetos Carro, Bicicleta e Aviao",
+            "Servir como classe base para os diferentes tipos de transporte",
+            "Armazenar os valores das distâncias",
+            "Controlar exclusivamente o método mover()"
+        ],
+        correta: 1
+    },
 
-  // =========================
-  // ÉTICA PROFISSIONAL
-  // =========================
+    {
+        pergunta: "Por que a classe Transporte foi declarada como abstract?",
+        respostas: [
+            "Porque ela não pode ser usada como classe base",
+            "Porque ela não pode possuir métodos",
+            "Porque ela serve como modelo/base e não deve ser instanciada diretamente",
+            "Porque todos os seus métodos precisam ser privados"
+        ],
+        correta: 2
+    },
 
-  {
-    pergunta: "O que é Ética Profissional?",
-    respostas: [
-      "A aplicação dos princípios éticos no ambiente de trabalho",
-      "O conjunto de leis trabalhistas",
-      "Apenas as regras internas de uma empresa",
-      "A forma como uma empresa aumenta seus lucros"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "A Ética Profissional orienta como o profissional deve agir com:",
-    respostas: [
-      "Somente seus superiores",
-      "Somente seus clientes",
-      "Colegas, clientes, empresas e sociedade",
-      "Somente outros profissionais da mesma área"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "No contexto da Ética Profissional, o conceito de 'Fazer' está relacionado a:",
-    respostas: [
-      "Conduta e atitudes",
-      "Competência, eficiência e eficácia",
-      "Valores pessoais",
-      "Responsabilidade ambiental"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "No contexto da Ética Profissional, o conceito de 'Agir' está relacionado a:",
-    respostas: [
-      "Competência técnica",
-      "Eficiência",
-      "Conduta e atitudes do profissional",
-      "Produtividade"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "O que são códigos de ética profissionais?",
-    respostas: [
-      "Leis que servem para todos os cidadãos",
-      "Normas que estabelecem regras obrigatórias para determinadas profissões",
-      "Sugestões opcionais para empresas",
-      "Regras utilizadas apenas por estudantes"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Além dos códigos de ética profissionais, as empresas podem possuir:",
-    respostas: [
-      "Códigos de conduta e regulamentos internos",
-      "Constituições próprias",
-      "Leis federais próprias",
-      "Poder Judiciário interno"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "O que é assédio moral?",
-    respostas: [
-      "Uma forma de comportamento que busca constranger, humilhar ou desqualificar uma pessoa",
-      "Uma avaliação profissional realizada pela empresa",
-      "Uma regra de comportamento no ambiente de trabalho",
-      "Uma forma de treinamento profissional"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "O assédio moral pode ocorrer, muitas vezes, por meio de:",
-    respostas: [
-      "Abuso de poder",
-      "Treinamento profissional",
-      "Promoções",
-      "Avaliações positivas"
-    ],
-    correta: 0
-  },
+    {
+        pergunta: "O que significa o método abaixo na classe Transporte?",
+        respostas: [
+            "public abstract double CalcularTempoViagem(double distancia);",
+            "O método possui uma implementação padrão",
+            "O método é obrigatório para todas as classes derivadas e deverá ser implementado por elas",
+            "O método só pode ser utilizado pela classe Transporte",
+            "O método não pode receber parâmetros"
+        ],
+        correta: 1
+    },
 
-  // =========================
-  // ÉTICA EMPRESARIAL
-  // =========================
+    {
+        pergunta: "Qual palavra-chave indica que um método é abstrato em C#?",
+        respostas: [
+            "virtual",
+            "override",
+            "abstract",
+            "interface"
+        ],
+        correta: 2
+    },
 
-  {
-    pergunta: "O que é Ética Empresarial?",
-    respostas: [
-      "O comportamento da empresa baseado em princípios morais, honestidade e responsabilidade",
-      "A estratégia utilizada para aumentar os preços",
-      "O conjunto de técnicas de marketing",
-      "Apenas o cumprimento das leis trabalhistas"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Qual alternativa apresenta princípios relacionados à Ética Empresarial?",
-    respostas: [
-      "Legalidade, transparência, confiabilidade e responsabilidade",
-      "Lucro, velocidade, competição e publicidade",
-      "Produção, vendas, marketing e tecnologia",
-      "Hierarquia, autoridade, controle e punição"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Uma empresa ética deve demonstrar respeito por:",
-    respostas: [
-      "Somente seus clientes",
-      "Somente seus funcionários",
-      "Clientes, funcionários, fornecedores e comunidade",
-      "Somente seus proprietários"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Uma das consequências da Ética Empresarial pode ser:",
-    respostas: [
-      "Aumento dos conflitos internos",
-      "Redução da confiança",
-      "Melhoria do ambiente de trabalho e redução de conflitos",
-      "Eliminação de todas as leis"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "A Ética Empresarial também envolve responsabilidade com:",
-    respostas: [
-      "Somente os acionistas",
-      "O meio ambiente",
-      "Somente os concorrentes",
-      "Somente o governo"
-    ],
-    correta: 1
-  },
+    {
+        pergunta: "O que a palavra-chave override significa no método CalcularTempoViagem()?",
+        respostas: [
+            "Que o método está sendo sobrescrito na classe derivada",
+            "Que o método é privado",
+            "Que o método não pode ser alterado",
+            "Que o método pertence a uma interface"
+        ],
+        correta: 0
+    },
 
-  // =========================
-  // ÉTICA AMBIENTAL
-  // =========================
+    {
+        pergunta: "Qual é a relação entre Carro e Transporte no código?",
+        respostas: [
+            "Carro implementa Transporte",
+            "Carro herda de Transporte",
+            "Transporte herda de Carro",
+            "Carro é uma interface de Transporte"
+        ],
+        correta: 1
+    },
 
-  {
-    pergunta: "O que é Ética Ambiental?",
-    respostas: [
-      "A aplicação da ética somente nas empresas ambientais",
-      "A relação ética do ser humano com a natureza e outros seres vivos",
-      "Um conjunto de leis sobre empresas",
-      "Uma política voltada exclusivamente para animais domésticos"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Segundo a Ética Ambiental, por que devemos preservar a natureza?",
-    respostas: [
-      "Porque a vida humana depende da preservação da natureza",
-      "Somente para aumentar a produção industrial",
-      "Porque todos os recursos naturais são infinitos",
-      "Somente para cumprir regras empresariais"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "A Ética Ambiental defende que devemos considerar:",
-    respostas: [
-      "Somente nossas necessidades atuais",
-      "Os impactos de nossas ações sobre outros seres vivos",
-      "Somente os interesses econômicos",
-      "Apenas os impactos sobre seres humanos"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "A Ética Ambiental também considera importante:",
-    respostas: [
-      "Pensar apenas no presente",
-      "Preservar recursos para as futuras gerações",
-      "Utilizar todos os recursos disponíveis",
-      "Priorizar somente o crescimento econômico"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que significa desenvolvimento sustentável?",
-    respostas: [
-      "Atender às necessidades atuais sem prejudicar as necessidades das futuras gerações",
-      "Utilizar todos os recursos naturais disponíveis",
-      "Priorizar somente as necessidades das futuras gerações",
-      "Evitar qualquer tipo de desenvolvimento econômico"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "O que é a Agenda 2030?",
-    respostas: [
-      "Um conjunto de leis brasileiras",
-      "Uma agenda empresarial voltada ao lucro",
-      "Um conjunto de objetivos da ONU voltados ao desenvolvimento sustentável",
-      "Um código de ética profissional"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "O que significa ODS?",
-    respostas: [
-      "Organização de Desenvolvimento Social",
-      "Objetivos de Desenvolvimento Sustentável",
-      "Organização de Direitos Sociais",
-      "Objetivos de Direito Sustentável"
-    ],
-    correta: 1
-  },
+    {
+        pergunta: "O que significa a declaração 'public class Carro : Transporte, IVeiculo'?",
+        respostas: [
+            "Carro é uma interface que herda de duas classes",
+            "Carro herda de Transporte e implementa a interface IVeiculo",
+            "Carro implementa duas interfaces",
+            "Carro é uma classe abstrata"
+        ],
+        correta: 1
+    },
 
-  // =========================
-  // DIREITO
-  // =========================
+    {
+        pergunta: "O que é uma interface em C#?",
+        respostas: [
+            "Um contrato que define membros que uma classe deve implementar",
+            "Uma classe que sempre pode ser instanciada",
+            "Um tipo especial de variável",
+            "Um banco de dados"
+        ],
+        correta: 0
+    },
 
-  {
-    pergunta: "Por que o Direito surgiu?",
-    respostas: [
-      "Para organizar a vida em sociedade e resolver conflitos",
-      "Para controlar somente as empresas",
-      "Para substituir a moral",
-      "Para eliminar os costumes da sociedade"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "O que é Direito?",
-    respostas: [
-      "Um conjunto de opiniões pessoais",
-      "Um conjunto de regras obrigatórias que organizam a sociedade e estabelecem limites para as ações",
-      "Somente um conjunto de costumes",
-      "Uma recomendação de comportamento"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "O que significa dizer que o Direito possui força coativa?",
-    respostas: [
-      "Suas regras são apenas recomendações",
-      "Suas regras são obrigatórias e podem gerar consequências quando não cumpridas",
-      "Suas regras só podem ser aplicadas pelas empresas",
-      "Suas regras não possuem punições"
-    ],
-    correta: 1
-  },
+    {
+        pergunta: "No código apresentado, qual método é definido pela interface IVeiculo?",
+        respostas: [
+            "exibirtipo()",
+            "CalcularTempoViagem()",
+            "mover()",
+            "Main()"
+        ],
+        correta: 2
+    },
 
-  // =========================
-  // GERAÇÕES DOS DIREITOS
-  // =========================
+    {
+        pergunta: "O que uma classe que implementa IVeiculo deve fazer?",
+        respostas: [
+            "Implementar o método mover() definido pela interface",
+            "Criar uma nova interface",
+            "Herda obrigatoriamente de Bicicleta",
+            "Implementar apenas o método exibirtipo()"
+        ],
+        correta: 0
+    },
 
-  {
-    pergunta: "Os direitos de 1ª geração estão relacionados principalmente a:",
-    respostas: [
-      "Direitos coletivos",
-      "Direitos sociais",
-      "Liberdades individuais",
-      "Direitos ambientais"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Qual alternativa apresenta exemplos de direitos de 1ª geração?",
-    respostas: [
-      "Salário, férias e assistência social",
-      "Vida, liberdade e igualdade",
-      "Meio ambiente e direitos do consumidor",
-      "Educação, saúde e transporte"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Os direitos de 2ª geração estão relacionados principalmente a:",
-    respostas: [
-      "Liberdades individuais",
-      "Condições sociais, econômicas e políticas",
-      "Interesses exclusivamente ambientais",
-      "Direitos exclusivamente empresariais"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Qual alternativa apresenta exemplos de direitos de 2ª geração?",
-    respostas: [
-      "Vida, liberdade e igualdade",
-      "Salário, férias, voto e assistência social",
-      "Meio ambiente e direitos do consumidor",
-      "Liberdade de expressão e propriedade"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Os direitos de 3ª geração estão relacionados principalmente a:",
-    respostas: [
-      "Interesses individuais",
-      "Interesses da coletividade",
-      "Direitos trabalhistas individuais",
-      "Liberdades exclusivamente pessoais"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Qual alternativa apresenta exemplos de direitos de 3ª geração?",
-    respostas: [
-      "Vida e liberdade",
-      "Salário e férias",
-      "Meio ambiente saudável e direitos do consumidor",
-      "Voto e assistência social"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Qual associação está correta?",
-    respostas: [
-      "1ª geração = Coletiva; 2ª = Individual; 3ª = Social",
-      "1ª geração = Individual; 2ª = Social; 3ª = Coletiva",
-      "1ª geração = Social; 2ª = Coletiva; 3ª = Individual",
-      "1ª geração = Ambiental; 2ª = Individual; 3ª = Social"
-    ],
-    correta: 1
-  },
+    {
+        pergunta: "Qual das classes abaixo implementa a interface IVeiculo?",
+        respostas: [
+            "Somente Carro",
+            "Somente Bicicleta",
+            "Somente Aviao",
+            "Carro, Bicicleta e Aviao"
+        ],
+        correta: 3
+    },
 
-  // =========================
-  // LEI
-  // =========================
+    {
+        pergunta: "Qual é o objetivo do método mover() no exemplo?",
+        respostas: [
+            "Calcular o tempo de viagem",
+            "Exibir uma mensagem indicando que o transporte está se movendo",
+            "Calcular a distância",
+            "Criar um novo objeto"
+        ],
+        correta: 1
+    },
 
-  {
-    pergunta: "O que é uma Lei?",
-    respostas: [
-      "Uma opinião criada pela sociedade",
-      "Uma norma escrita e obrigatória criada por meio de um processo legislativo",
-      "Uma recomendação moral",
-      "Um costume que não possui obrigatoriedade"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "As leis federais são aplicadas:",
-    respostas: [
-      "Somente em um município",
-      "Somente em um estado",
-      "Em todo o país",
-      "Somente no Distrito Federal"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "As leis estaduais são aplicadas:",
-    respostas: [
-      "Em todo o mundo",
-      "Dentro de um estado",
-      "Somente em um município",
-      "Em todo o território nacional"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "As leis municipais são aplicadas:",
-    respostas: [
-      "Dentro de um município",
-      "Em todo o país",
-      "Em todos os estados",
-      "Somente no Poder Judiciário"
-    ],
-    correta: 0
-  },
+    {
+        pergunta: "Qual método calcula o tempo de viagem dos transportes?",
+        respostas: [
+            "mover()",
+            "exibirtipo()",
+            "CalcularTempoViagem()",
+            "Main()"
+        ],
+        correta: 2
+    },
 
-  // =========================
-  // CONSTITUIÇÃO
-  // =========================
+    {
+        pergunta: "Qual é a velocidade utilizada pelo Carro no cálculo?",
+        respostas: [
+            "20",
+            "100",
+            "500",
+            "50"
+        ],
+        correta: 1
+    },
 
-  {
-    pergunta: "O que é a Constituição Federal?",
-    respostas: [
-      "Uma lei municipal",
-      "A Lei fundamental do país, que serve como base do sistema jurídico",
-      "Um código de ética profissional",
-      "Uma norma criada pelas empresas"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Uma lei que contradiz a Constituição pode ser considerada:",
-    respostas: [
-      "Municipal",
-      "Federal",
-      "Inconstitucional",
-      "Administrativa"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Qual é a principal função da Constituição?",
-    respostas: [
-      "Organizar os poderes do Estado e estabelecer princípios, direitos e garantias",
-      "Criar regras somente para empresas",
-      "Definir os preços dos produtos",
-      "Substituir todas as leis municipais"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Em que data foi promulgada a Constituição Federal de 1988?",
-    respostas: [
-      "5 de outubro de 1988",
-      "7 de setembro de 1988",
-      "15 de novembro de 1988",
-      "1º de janeiro de 1988"
-    ],
-    correta: 0
-  },
+    {
+        pergunta: "Qual é a velocidade utilizada pela Bicicleta no cálculo?",
+        respostas: [
+            "20",
+            "100",
+            "200",
+            "500"
+        ],
+        correta: 0
+    },
 
-  // =========================
-  // TRÊS PODERES
-  // =========================
+    {
+        pergunta: "Qual é a velocidade utilizada pelo Aviao no cálculo?",
+        respostas: [
+            "20",
+            "100",
+            "300",
+            "500"
+        ],
+        correta: 3
+    },
 
-  {
-    pergunta: "Quais são os três Poderes estabelecidos pela Constituição?",
-    respostas: [
-      "Federal, Estadual e Municipal",
-      "Executivo, Legislativo e Judiciário",
-      "Presidencial, Federal e Estadual",
-      "Civil, Militar e Judiciário"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Qual é a principal função do Poder Legislativo?",
-    respostas: [
-      "Julgar conflitos",
-      "Administrar o Estado",
-      "Criar e alterar leis",
-      "Executar políticas públicas"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Qual é a principal função do Poder Executivo?",
-    respostas: [
-      "Criar leis",
-      "Administrar o Estado e executar políticas públicas",
-      "Julgar conflitos",
-      "Alterar a Constituição sozinho"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Qual é a principal função do Poder Judiciário?",
-    respostas: [
-      "Criar leis",
-      "Administrar o Estado",
-      "Julgar conflitos e aplicar o Direito",
-      "Criar políticas públicas"
-    ],
-    correta: 2
-  },
+    {
+        pergunta: "Se a distância for 200 km, quanto tempo o Carro levará segundo o código?",
+        respostas: [
+            "1 hora",
+            "2 horas",
+            "10 horas",
+            "20 horas"
+        ],
+        correta: 1
+    },
 
-  // =========================
-  // PROCESSO LEGISLATIVO
-  // =========================
+    {
+        pergunta: "Se a distância for 200 km, quanto tempo a Bicicleta levará segundo o código?",
+        respostas: [
+            "2 horas",
+            "5 horas",
+            "10 horas",
+            "20 horas"
+        ],
+        correta: 2
+    },
 
-  {
-    pergunta: "Qual sequência representa, de forma simplificada, o processo de criação de uma lei?",
-    respostas: [
-      "Projeto → votação/aprovação → sanção ou veto → promulgação → publicação",
-      "Publicação → projeto → veto → votação → promulgação",
-      "Projeto → publicação → votação → criação do Estado",
-      "Votação → projeto → publicação → veto → promulgação"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Depois de publicada oficialmente, a lei:",
-    respostas: [
-      "Deixa de fazer parte do ordenamento jurídico",
-      "Passa a integrar o ordenamento jurídico conforme suas regras de vigência",
-      "Precisa ser aprovada novamente pela população",
-      "Deixa de ser obrigatória"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "As leis são identificadas principalmente por:",
-    respostas: [
-      "Nomes e símbolos",
-      "Números e artigos",
-      "Cores e códigos",
-      "Datas e assinaturas"
-    ],
-    correta: 1
-  },
+    {
+        pergunta: "Se a distância for 1000 km, quanto tempo o Aviao levará segundo o código?",
+        respostas: [
+            "2 horas",
+            "5 horas",
+            "10 horas",
+            "20 horas"
+        ],
+        correta: 0
+    },
 
-  // =========================
-  // DIREITO CONSTITUCIONAL
-  // =========================
+    {
+        pergunta: "O que o método exibirtipo() faz?",
+        respostas: [
+            "Calcula a velocidade do transporte",
+            "Exibe o tipo de transporte utilizando GetType().Name",
+            "Cria um novo transporte",
+            "Move o transporte"
+        ],
+        correta: 1
+    },
 
-  {
-    pergunta: "O que é Direito Constitucional?",
-    respostas: [
-      "O ramo do Direito que estuda a Constituição, os poderes do Estado e os direitos e garantias fundamentais",
-      "O ramo que trata somente de contratos",
-      "O ramo que trata somente de empresas",
-      "O conjunto de regras municipais"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "A Constituição é responsável por:",
-    respostas: [
-      "Organizar os poderes do Estado e garantir direitos e liberdades",
-      "Criar somente leis municipais",
-      "Regular apenas relações trabalhistas",
-      "Definir somente crimes e penas"
-    ],
-    correta: 0
-  },
+    {
+        pergunta: "O que GetType().Name retorna no método exibirtipo()?",
+        respostas: [
+            "O valor da distância",
+            "O nome do método atual",
+            "O nome do tipo/classe do objeto",
+            "O nome do namespace"
+        ],
+        correta: 2
+    },
 
-  // =========================
-  // PEC
-  // =========================
+    {
+        pergunta: "Se o objeto for criado como 'Carro c1 = new Carro();', o que GetType().Name retornará?",
+        respostas: [
+            "Transporte",
+            "IVeiculo",
+            "Carro",
+            "c1"
+        ],
+        correta: 2
+    },
 
-  {
-    pergunta: "O que é uma PEC?",
-    respostas: [
-      "Proposta de Emenda à Constituição",
-      "Projeto Especial de Controle",
-      "Programa Executivo Constitucional",
-      "Proposta Estadual de Constituição"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Para que serve uma PEC?",
-    respostas: [
-      "Para criar uma lei municipal",
-      "Para propor alterações na Constituição",
-      "Para substituir o Poder Judiciário",
-      "Para criar códigos de ética empresarial"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Qual é a sequência simplificada apresentada no resumo para aprovação de uma PEC?",
-    respostas: [
-      "Senado → Câmara → Presidente → publicação",
-      "Câmara → Senado → aprovação → promulgação",
-      "Presidente → Câmara → Senado → votação popular",
-      "Câmara → Presidente → Senado → promulgação"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Segundo o resumo, para uma PEC ser aprovada são necessários:",
-    respostas: [
-      "2/3 dos membros de uma Casa em um único turno",
-      "3/5 dos membros de cada Casa, em dois turnos de votação",
-      "Maioria simples apenas na Câmara",
-      "Votação popular obrigatória"
-    ],
-    correta: 1
-  }
+    {
+        pergunta: "O que significa 'Carro c1 = new Carro();'?",
+        respostas: [
+            "Cria um objeto da classe Carro e armazena sua referência em c1",
+            "Cria uma interface chamada c1",
+            "Cria uma classe chamada Carro",
+            "Declara uma variável do tipo Transporte"
+        ],
+        correta: 0
+    },
+
+    {
+        pergunta: "Qual palavra-chave é utilizada para criar um novo objeto em C#?",
+        respostas: [
+            "create",
+            "object",
+            "new",
+            "instance"
+        ],
+        correta: 2
+    },
+
+    {
+        pergunta: "Qual é a função do 'using ConsoleApp5;' no Program.cs?",
+        respostas: [
+            "Criar a classe ConsoleApp5",
+            "Permitir o uso de tipos pertencentes ao namespace ConsoleApp5",
+            "Criar um novo objeto",
+            "Executar o programa"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "O que significa 'namespace ConsoleApp5'?",
+        respostas: [
+            "É uma variável global",
+            "É uma forma de organizar classes e outros tipos relacionados",
+            "É uma interface",
+            "É um método obrigatório"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "Qual método é executado para mover o objeto Carro?",
+        respostas: [
+            "c1.mover()",
+            "c1.CalcularTempoViagem()",
+            "c1.exibirtipo()",
+            "Carro.mover()"
+        ],
+        correta: 0
+    },
+
+    {
+        pergunta: "O que acontece quando o comando 'c1.mover();' é executado?",
+        respostas: [
+            "O programa calcula a distância",
+            "É exibida a mensagem 'O carro está se movendo.'",
+            "É criado outro carro",
+            "É calculado o tempo de viagem"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "Qual conceito de POO está diretamente relacionado ao fato de Carro, Bicicleta e Aviao possuírem diferentes implementações de CalcularTempoViagem()?",
+        respostas: [
+            "Encapsulamento",
+            "Polimorfismo",
+            "Composição",
+            "Sobrecarga de variável"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "No código, Carro, Bicicleta e Aviao possuem o mesmo nome de método, mas comportamentos diferentes. Isso é um exemplo de:",
+        respostas: [
+            "Polimorfismo",
+            "Encapsulamento",
+            "Abstração de variável",
+            "Herança múltipla de classes"
+        ],
+        correta: 0
+    },
+
+    {
+        pergunta: "Qual conceito permite que Carro, Bicicleta e Aviao reutilizem características da classe Transporte?",
+        respostas: [
+            "Herança",
+            "Interface",
+            "Sobrecarga",
+            "Construtor"
+        ],
+        correta: 0
+    },
+
+    {
+        pergunta: "Qual conceito está presente quando a classe Transporte define apenas que CalcularTempoViagem deve existir, deixando a implementação para as classes filhas?",
+        respostas: [
+            "Abstração",
+            "Encapsulamento",
+            "Sobrecarga",
+            "Instanciação"
+        ],
+        correta: 0
+    },
+
+    {
+        pergunta: "Qual destas afirmações sobre uma classe abstrata é verdadeira?",
+        respostas: [
+            "Ela sempre pode ser instanciada com new",
+            "Ela não pode conter métodos",
+            "Ela pode possuir métodos concretos e métodos abstratos",
+            "Ela só pode possuir atributos públicos"
+        ],
+        correta: 2
+    },
+
+    {
+        pergunta: "É possível fazer 'Transporte t = new Transporte();' no código apresentado?",
+        respostas: [
+            "Sim, porque Transporte é uma classe pública",
+            "Sim, porque toda classe pode ser instanciada",
+            "Não, porque Transporte é uma classe abstrata",
+            "Não, porque Transporte é uma interface"
+        ],
+        correta: 2
+    },
+
+    {
+        pergunta: "Por que as classes Carro, Bicicleta e Aviao precisam implementar CalcularTempoViagem()?",
+        respostas: [
+            "Porque o método foi declarado como abstract na classe Transporte",
+            "Porque o método está dentro da interface IVeiculo",
+            "Porque todo método precisa ser implementado três vezes",
+            "Porque o Program.cs exige"
+        ],
+        correta: 0
+    },
+
+    {
+        pergunta: "Qual dos métodos abaixo pertence à interface IVeiculo?",
+        respostas: [
+            "CalcularTempoViagem(double distancia)",
+            "exibirtipo()",
+            "mover()",
+            "GetType().Name"
+        ],
+        correta: 2
+    },
+
+    {
+        pergunta: "Qual dos métodos abaixo pertence à classe abstrata Transporte?",
+        respostas: [
+            "mover()",
+            "CalcularTempoViagem(double distancia)",
+            "Main()",
+            "Console.WriteLine()"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "O que acontece se uma classe herdar de Transporte e não implementar o método abstrato CalcularTempoViagem()?",
+        respostas: [
+            "Nada, o método será criado automaticamente",
+            "A classe terá que ser abstrata ou ocorrerá um erro de compilação",
+            "O método será executado com valor 0",
+            "A classe automaticamente herdará a implementação do Carro"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "Qual é a diferença principal entre herança e implementação de interface no código?",
+        respostas: [
+            "Herança permite derivar de uma classe, enquanto a interface define um contrato que a classe deve implementar",
+            "Não existe diferença",
+            "Interface sempre substitui uma classe abstrata",
+            "Herança serve apenas para criar objetos"
+        ],
+        correta: 0
+    },
+
+    {
+        pergunta: "Uma classe em C# pode herdar de mais de uma classe ao mesmo tempo?",
+        respostas: [
+            "Sim, sempre",
+            "Sim, desde que todas sejam abstratas",
+            "Não, C# não permite herança múltipla de classes",
+            "Somente se usar override"
+        ],
+        correta: 2
+    },
+
+    {
+        pergunta: "No código apresentado, como Carro consegue ter uma classe base e também implementar uma interface?",
+        respostas: [
+            "Carro : Transporte, IVeiculo",
+            "Carro : Transporte + IVeiculo",
+            "Carro extends Transporte implements IVeiculo",
+            "Carro -> Transporte -> IVeiculo"
+        ],
+        correta: 0
+    },
+
+    {
+        pergunta: "O que o comando double.Parse(Console.ReadLine()) faz?",
+        respostas: [
+            "Lê uma entrada do usuário e converte o texto para double",
+            "Converte um número para string",
+            "Cria um objeto double",
+            "Lê apenas números inteiros"
+        ],
+        correta: 0
+    },
+
+    {
+        pergunta: "Qual é o tipo da variável 'distancia' no Program.cs?",
+        respostas: [
+            "int",
+            "string",
+            "double",
+            "float"
+        ],
+        correta: 2
+    },
+
+    {
+        pergunta: "O que o comando Console.WriteLine() faz?",
+        respostas: [
+            "Lê informações do teclado",
+            "Exibe informações no console",
+            "Cria uma classe",
+            "Converte tipos de dados"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "Qual será o resultado de Carro.CalcularTempoViagem(500) considerando o código apresentado?",
+        respostas: [
+            "0,2 horas",
+            "5 horas",
+            "50 horas",
+            "500 horas"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "Qual será o resultado de Bicicleta.CalcularTempoViagem(100) considerando o código apresentado?",
+        respostas: [
+            "2 horas",
+            "5 horas",
+            "10 horas",
+            "20 horas"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "Qual será o resultado de Aviao.CalcularTempoViagem(2500) considerando o código apresentado?",
+        respostas: [
+            "2 horas",
+            "5 horas",
+            "10 horas",
+            "50 horas"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "Qual é a fórmula utilizada pelo Carro para calcular o tempo de viagem?",
+        respostas: [
+            "distancia * 100",
+            "distancia / 100",
+            "100 / distancia",
+            "distancia + 100"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "Qual é a fórmula utilizada pela Bicicleta para calcular o tempo de viagem?",
+        respostas: [
+            "distancia / 20",
+            "distancia / 100",
+            "distancia * 20",
+            "20 / distancia"
+        ],
+        correta: 0
+    },
+
+    {
+        pergunta: "Qual é a fórmula utilizada pelo Aviao para calcular o tempo de viagem?",
+        respostas: [
+            "distancia / 20",
+            "distancia / 100",
+            "distancia / 500",
+            "500 / distancia"
+        ],
+        correta: 2
+    },
+
+    {
+        pergunta: "O que representa o parâmetro 'double distancia' no método CalcularTempoViagem()?",
+        respostas: [
+            "O tipo do transporte",
+            "A distância informada que será utilizada no cálculo",
+            "A velocidade do transporte",
+            "O nome do objeto"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "Qual conceito permite que a mesma chamada 'CalcularTempoViagem()' tenha resultados diferentes dependendo do objeto?",
+        respostas: [
+            "Polimorfismo",
+            "Encapsulamento",
+            "Namespace",
+            "Construtor"
+        ],
+        correta: 0
+    }
 ];
 
 const quizBody = document.getElementById("quizBody");
