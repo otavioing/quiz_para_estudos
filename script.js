@@ -2,108 +2,63 @@ const perguntas = [
     {
         pergunta: "O que é uma classe abstrata em C#?",
         respostas: [
+            "Uma classe que não pode ser instanciada diretamente e serve como base para outras classes",
+            "Uma classe que só possui atributos",
             "Uma classe que não pode possuir métodos",
-            "Uma classe que serve como base para outras classes e não pode ser instanciada diretamente",
-            "Uma classe que só pode ser usada por interfaces",
-            "Uma classe que obrigatoriamente possui apenas atributos privados"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "No código apresentado, qual é a função da classe Transporte?",
-        respostas: [
-            "Criar diretamente os objetos Carro, Bicicleta e Aviao",
-            "Servir como classe base para os diferentes tipos de transporte",
-            "Armazenar os valores das distâncias",
-            "Controlar exclusivamente o método mover()"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "Por que a classe Transporte foi declarada como abstract?",
-        respostas: [
-            "Porque ela não pode ser usada como classe base",
-            "Porque ela não pode possuir métodos",
-            "Porque ela serve como modelo/base e não deve ser instanciada diretamente",
-            "Porque todos os seus métodos precisam ser privados"
-        ],
-        correta: 2
-    },
-
-    {
-        pergunta: "O que significa o método abaixo na classe Transporte?",
-        respostas: [
-            "public abstract double CalcularTempoViagem(double distancia);",
-            "O método possui uma implementação padrão",
-            "O método é obrigatório para todas as classes derivadas e deverá ser implementado por elas",
-            "O método só pode ser utilizado pela classe Transporte",
-            "O método não pode receber parâmetros"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "Qual palavra-chave indica que um método é abstrato em C#?",
-        respostas: [
-            "virtual",
-            "override",
-            "abstract",
-            "interface"
-        ],
-        correta: 2
-    },
-
-    {
-        pergunta: "O que a palavra-chave override significa no método CalcularTempoViagem()?",
-        respostas: [
-            "Que o método está sendo sobrescrito na classe derivada",
-            "Que o método é privado",
-            "Que o método não pode ser alterado",
-            "Que o método pertence a uma interface"
+            "Uma classe que só pode ser usada em interfaces"
         ],
         correta: 0
     },
 
     {
-        pergunta: "Qual é a relação entre Carro e Transporte no código?",
+        pergunta: "No código apresentado, qual classe é abstrata?",
         respostas: [
-            "Carro implementa Transporte",
-            "Carro herda de Transporte",
-            "Transporte herda de Carro",
-            "Carro é uma interface de Transporte"
+            "Carro",
+            "Bicicleta",
+            "Transporte",
+            "Aviao"
+        ],
+        correta: 2
+    },
+
+    {
+        pergunta: "O que significa o método 'public abstract double CalcularTempoViagem(double distancia);'?",
+        respostas: [
+            "O método já possui uma implementação",
+            "As classes filhas devem implementar esse método",
+            "O método só pode ser usado pelo Program.cs",
+            "O método é privado"
         ],
         correta: 1
     },
 
     {
-        pergunta: "O que significa a declaração 'public class Carro : Transporte, IVeiculo'?",
+        pergunta: "O que significa 'public class Carro : Transporte, IVeiculo'?",
         respostas: [
-            "Carro é uma interface que herda de duas classes",
-            "Carro herda de Transporte e implementa a interface IVeiculo",
-            "Carro implementa duas interfaces",
+            "Carro herda de Transporte e implementa IVeiculo",
+            "Carro herda de duas classes",
+            "Carro é uma interface",
             "Carro é uma classe abstrata"
         ],
-        correta: 1
-    },
-
-    {
-        pergunta: "O que é uma interface em C#?",
-        respostas: [
-            "Um contrato que define membros que uma classe deve implementar",
-            "Uma classe que sempre pode ser instanciada",
-            "Um tipo especial de variável",
-            "Um banco de dados"
-        ],
         correta: 0
     },
 
     {
-        pergunta: "No código apresentado, qual método é definido pela interface IVeiculo?",
+        pergunta: "Qual é a função de uma interface no código?",
         respostas: [
-            "exibirtipo()",
+            "Criar objetos automaticamente",
+            "Definir um contrato que a classe deve implementar",
+            "Substituir todas as classes abstratas",
+            "Armazenar valores"
+        ],
+        correta: 1
+    },
+
+    {
+        pergunta: "Qual método é definido pela interface IVeiculo?",
+        respostas: [
             "CalcularTempoViagem()",
+            "exibirtipo()",
             "mover()",
             "Main()"
         ],
@@ -111,414 +66,62 @@ const perguntas = [
     },
 
     {
-        pergunta: "O que uma classe que implementa IVeiculo deve fazer?",
+        pergunta: "Para que serve a palavra-chave 'override'?",
         respostas: [
-            "Implementar o método mover() definido pela interface",
-            "Criar uma nova interface",
-            "Herda obrigatoriamente de Bicicleta",
-            "Implementar apenas o método exibirtipo()"
-        ],
-        correta: 0
-    },
-
-    {
-        pergunta: "Qual das classes abaixo implementa a interface IVeiculo?",
-        respostas: [
-            "Somente Carro",
-            "Somente Bicicleta",
-            "Somente Aviao",
-            "Carro, Bicicleta e Aviao"
-        ],
-        correta: 3
-    },
-
-    {
-        pergunta: "Qual é o objetivo do método mover() no exemplo?",
-        respostas: [
-            "Calcular o tempo de viagem",
-            "Exibir uma mensagem indicando que o transporte está se movendo",
-            "Calcular a distância",
-            "Criar um novo objeto"
+            "Criar uma nova classe",
+            "Sobrescrever um método herdado",
+            "Criar uma interface",
+            "Criar um objeto"
         ],
         correta: 1
     },
 
     {
-        pergunta: "Qual método calcula o tempo de viagem dos transportes?",
+        pergunta: "Qual conceito de POO está presente quando Carro, Bicicleta e Aviao possuem diferentes implementações de CalcularTempoViagem()?",
         respostas: [
-            "mover()",
-            "exibirtipo()",
-            "CalcularTempoViagem()",
-            "Main()"
+            "Encapsulamento",
+            "Herança",
+            "Polimorfismo",
+            "Construtor"
         ],
         correta: 2
     },
 
     {
-        pergunta: "Qual é a velocidade utilizada pelo Carro no cálculo?",
+        pergunta: "O que acontece em 'Carro c1 = new Carro();'?",
         respostas: [
-            "20",
-            "100",
-            "500",
-            "50"
+            "É criada uma classe Carro",
+            "É criado um objeto da classe Carro",
+            "É criada uma interface",
+            "É criado um método"
         ],
         correta: 1
-    },
-
-    {
-        pergunta: "Qual é a velocidade utilizada pela Bicicleta no cálculo?",
-        respostas: [
-            "20",
-            "100",
-            "200",
-            "500"
-        ],
-        correta: 0
-    },
-
-    {
-        pergunta: "Qual é a velocidade utilizada pelo Aviao no cálculo?",
-        respostas: [
-            "20",
-            "100",
-            "300",
-            "500"
-        ],
-        correta: 3
-    },
-
-    {
-        pergunta: "Se a distância for 200 km, quanto tempo o Carro levará segundo o código?",
-        respostas: [
-            "1 hora",
-            "2 horas",
-            "10 horas",
-            "20 horas"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "Se a distância for 200 km, quanto tempo a Bicicleta levará segundo o código?",
-        respostas: [
-            "2 horas",
-            "5 horas",
-            "10 horas",
-            "20 horas"
-        ],
-        correta: 2
-    },
-
-    {
-        pergunta: "Se a distância for 1000 km, quanto tempo o Aviao levará segundo o código?",
-        respostas: [
-            "2 horas",
-            "5 horas",
-            "10 horas",
-            "20 horas"
-        ],
-        correta: 0
     },
 
     {
         pergunta: "O que o método exibirtipo() faz?",
         respostas: [
-            "Calcula a velocidade do transporte",
-            "Exibe o tipo de transporte utilizando GetType().Name",
-            "Cria um novo transporte",
-            "Move o transporte"
+            "Calcula o tempo da viagem",
+            "Exibe o tipo do transporte",
+            "Move o transporte",
+            "Lê a distância"
         ],
         correta: 1
     },
 
     {
-        pergunta: "O que GetType().Name retorna no método exibirtipo()?",
+        pergunta: "Qual velocidade é utilizada pelo Carro no cálculo?",
         respostas: [
-            "O valor da distância",
-            "O nome do método atual",
-            "O nome do tipo/classe do objeto",
-            "O nome do namespace"
-        ],
-        correta: 2
-    },
-
-    {
-        pergunta: "Se o objeto for criado como 'Carro c1 = new Carro();', o que GetType().Name retornará?",
-        respostas: [
-            "Transporte",
-            "IVeiculo",
-            "Carro",
-            "c1"
-        ],
-        correta: 2
-    },
-
-    {
-        pergunta: "O que significa 'Carro c1 = new Carro();'?",
-        respostas: [
-            "Cria um objeto da classe Carro e armazena sua referência em c1",
-            "Cria uma interface chamada c1",
-            "Cria uma classe chamada Carro",
-            "Declara uma variável do tipo Transporte"
-        ],
-        correta: 0
-    },
-
-    {
-        pergunta: "Qual palavra-chave é utilizada para criar um novo objeto em C#?",
-        respostas: [
-            "create",
-            "object",
-            "new",
-            "instance"
-        ],
-        correta: 2
-    },
-
-    {
-        pergunta: "Qual é a função do 'using ConsoleApp5;' no Program.cs?",
-        respostas: [
-            "Criar a classe ConsoleApp5",
-            "Permitir o uso de tipos pertencentes ao namespace ConsoleApp5",
-            "Criar um novo objeto",
-            "Executar o programa"
+            "20",
+            "100",
+            "500",
+            "1000"
         ],
         correta: 1
     },
 
     {
-        pergunta: "O que significa 'namespace ConsoleApp5'?",
-        respostas: [
-            "É uma variável global",
-            "É uma forma de organizar classes e outros tipos relacionados",
-            "É uma interface",
-            "É um método obrigatório"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "Qual método é executado para mover o objeto Carro?",
-        respostas: [
-            "c1.mover()",
-            "c1.CalcularTempoViagem()",
-            "c1.exibirtipo()",
-            "Carro.mover()"
-        ],
-        correta: 0
-    },
-
-    {
-        pergunta: "O que acontece quando o comando 'c1.mover();' é executado?",
-        respostas: [
-            "O programa calcula a distância",
-            "É exibida a mensagem 'O carro está se movendo.'",
-            "É criado outro carro",
-            "É calculado o tempo de viagem"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "Qual conceito de POO está diretamente relacionado ao fato de Carro, Bicicleta e Aviao possuírem diferentes implementações de CalcularTempoViagem()?",
-        respostas: [
-            "Encapsulamento",
-            "Polimorfismo",
-            "Composição",
-            "Sobrecarga de variável"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "No código, Carro, Bicicleta e Aviao possuem o mesmo nome de método, mas comportamentos diferentes. Isso é um exemplo de:",
-        respostas: [
-            "Polimorfismo",
-            "Encapsulamento",
-            "Abstração de variável",
-            "Herança múltipla de classes"
-        ],
-        correta: 0
-    },
-
-    {
-        pergunta: "Qual conceito permite que Carro, Bicicleta e Aviao reutilizem características da classe Transporte?",
-        respostas: [
-            "Herança",
-            "Interface",
-            "Sobrecarga",
-            "Construtor"
-        ],
-        correta: 0
-    },
-
-    {
-        pergunta: "Qual conceito está presente quando a classe Transporte define apenas que CalcularTempoViagem deve existir, deixando a implementação para as classes filhas?",
-        respostas: [
-            "Abstração",
-            "Encapsulamento",
-            "Sobrecarga",
-            "Instanciação"
-        ],
-        correta: 0
-    },
-
-    {
-        pergunta: "Qual destas afirmações sobre uma classe abstrata é verdadeira?",
-        respostas: [
-            "Ela sempre pode ser instanciada com new",
-            "Ela não pode conter métodos",
-            "Ela pode possuir métodos concretos e métodos abstratos",
-            "Ela só pode possuir atributos públicos"
-        ],
-        correta: 2
-    },
-
-    {
-        pergunta: "É possível fazer 'Transporte t = new Transporte();' no código apresentado?",
-        respostas: [
-            "Sim, porque Transporte é uma classe pública",
-            "Sim, porque toda classe pode ser instanciada",
-            "Não, porque Transporte é uma classe abstrata",
-            "Não, porque Transporte é uma interface"
-        ],
-        correta: 2
-    },
-
-    {
-        pergunta: "Por que as classes Carro, Bicicleta e Aviao precisam implementar CalcularTempoViagem()?",
-        respostas: [
-            "Porque o método foi declarado como abstract na classe Transporte",
-            "Porque o método está dentro da interface IVeiculo",
-            "Porque todo método precisa ser implementado três vezes",
-            "Porque o Program.cs exige"
-        ],
-        correta: 0
-    },
-
-    {
-        pergunta: "Qual dos métodos abaixo pertence à interface IVeiculo?",
-        respostas: [
-            "CalcularTempoViagem(double distancia)",
-            "exibirtipo()",
-            "mover()",
-            "GetType().Name"
-        ],
-        correta: 2
-    },
-
-    {
-        pergunta: "Qual dos métodos abaixo pertence à classe abstrata Transporte?",
-        respostas: [
-            "mover()",
-            "CalcularTempoViagem(double distancia)",
-            "Main()",
-            "Console.WriteLine()"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "O que acontece se uma classe herdar de Transporte e não implementar o método abstrato CalcularTempoViagem()?",
-        respostas: [
-            "Nada, o método será criado automaticamente",
-            "A classe terá que ser abstrata ou ocorrerá um erro de compilação",
-            "O método será executado com valor 0",
-            "A classe automaticamente herdará a implementação do Carro"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "Qual é a diferença principal entre herança e implementação de interface no código?",
-        respostas: [
-            "Herança permite derivar de uma classe, enquanto a interface define um contrato que a classe deve implementar",
-            "Não existe diferença",
-            "Interface sempre substitui uma classe abstrata",
-            "Herança serve apenas para criar objetos"
-        ],
-        correta: 0
-    },
-
-    {
-        pergunta: "Uma classe em C# pode herdar de mais de uma classe ao mesmo tempo?",
-        respostas: [
-            "Sim, sempre",
-            "Sim, desde que todas sejam abstratas",
-            "Não, C# não permite herança múltipla de classes",
-            "Somente se usar override"
-        ],
-        correta: 2
-    },
-
-    {
-        pergunta: "No código apresentado, como Carro consegue ter uma classe base e também implementar uma interface?",
-        respostas: [
-            "Carro : Transporte, IVeiculo",
-            "Carro : Transporte + IVeiculo",
-            "Carro extends Transporte implements IVeiculo",
-            "Carro -> Transporte -> IVeiculo"
-        ],
-        correta: 0
-    },
-
-    {
-        pergunta: "O que o comando double.Parse(Console.ReadLine()) faz?",
-        respostas: [
-            "Lê uma entrada do usuário e converte o texto para double",
-            "Converte um número para string",
-            "Cria um objeto double",
-            "Lê apenas números inteiros"
-        ],
-        correta: 0
-    },
-
-    {
-        pergunta: "Qual é o tipo da variável 'distancia' no Program.cs?",
-        respostas: [
-            "int",
-            "string",
-            "double",
-            "float"
-        ],
-        correta: 2
-    },
-
-    {
-        pergunta: "O que o comando Console.WriteLine() faz?",
-        respostas: [
-            "Lê informações do teclado",
-            "Exibe informações no console",
-            "Cria uma classe",
-            "Converte tipos de dados"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "Qual será o resultado de Carro.CalcularTempoViagem(500) considerando o código apresentado?",
-        respostas: [
-            "0,2 horas",
-            "5 horas",
-            "50 horas",
-            "500 horas"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "Qual será o resultado de Bicicleta.CalcularTempoViagem(100) considerando o código apresentado?",
-        respostas: [
-            "2 horas",
-            "5 horas",
-            "10 horas",
-            "20 horas"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "Qual será o resultado de Aviao.CalcularTempoViagem(2500) considerando o código apresentado?",
+        pergunta: "Se a distância for 500 km, quanto tempo o Carro levará?",
         respostas: [
             "2 horas",
             "5 horas",
@@ -529,58 +132,36 @@ const perguntas = [
     },
 
     {
-        pergunta: "Qual é a fórmula utilizada pelo Carro para calcular o tempo de viagem?",
+        pergunta: "Se a distância for 100 km, quanto tempo a Bicicleta levará?",
         respostas: [
-            "distancia * 100",
-            "distancia / 100",
-            "100 / distancia",
-            "distancia + 100"
+            "2 horas",
+            "5 horas",
+            "10 horas",
+            "20 horas"
         ],
         correta: 1
     },
 
     {
-        pergunta: "Qual é a fórmula utilizada pela Bicicleta para calcular o tempo de viagem?",
+        pergunta: "Se a distância for 1000 km, quanto tempo o Aviao levará?",
         respostas: [
-            "distancia / 20",
-            "distancia / 100",
-            "distancia * 20",
-            "20 / distancia"
+            "1 hora",
+            "2 horas",
+            "5 horas",
+            "10 horas"
         ],
-        correta: 0
+        correta: 1
     },
 
     {
-        pergunta: "Qual é a fórmula utilizada pelo Aviao para calcular o tempo de viagem?",
+        pergunta: "É possível fazer 'Transporte t = new Transporte();' no código apresentado?",
         respostas: [
-            "distancia / 20",
-            "distancia / 100",
-            "distancia / 500",
-            "500 / distancia"
+            "Sim, porque Transporte é pública",
+            "Sim, porque toda classe pode ser instanciada",
+            "Não, porque Transporte é abstrata",
+            "Não, porque Transporte é uma interface"
         ],
         correta: 2
-    },
-
-    {
-        pergunta: "O que representa o parâmetro 'double distancia' no método CalcularTempoViagem()?",
-        respostas: [
-            "O tipo do transporte",
-            "A distância informada que será utilizada no cálculo",
-            "A velocidade do transporte",
-            "O nome do objeto"
-        ],
-        correta: 1
-    },
-
-    {
-        pergunta: "Qual conceito permite que a mesma chamada 'CalcularTempoViagem()' tenha resultados diferentes dependendo do objeto?",
-        respostas: [
-            "Polimorfismo",
-            "Encapsulamento",
-            "Namespace",
-            "Construtor"
-        ],
-        correta: 0
     }
 ];
 
